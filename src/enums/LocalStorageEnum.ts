@@ -1,0 +1,8 @@
+export enum LocalStorageEnum {
+  PROJECT_NAME = "SCHOOL_DASHBOARD_EXERCISE",
+  LANGUAGE_KEY = LocalStorageEnum.PROJECT_NAME + "_LANGUAGE",
+  TOKEN_KEY = LocalStorageEnum.PROJECT_NAME + "_TOKEN_KEY",
+  USER_KEY = LocalStorageEnum.PROJECT_NAME + "_USER_KEY",
+  HINT_INPUT = LocalStorageEnum.PROJECT_NAME + "HINT_INPUT",
+  LATEX_OPTION_INPUT = LocalStorageEnum.PROJECT_NAME + "LATEX_OPTION_INPUT",
+}

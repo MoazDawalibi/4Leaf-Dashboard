@@ -1,0 +1,42 @@
+.FillterNavWithRadio {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1vw;
+  padding-inline: 1vw;
+  margin-top: 2vw;
+  > header {
+    color: var(--primary);
+    span {
+      color: var(--subtext);
+    }
+  }
+  > span {
+    display: flex;
+    align-items: center;
+    .ButtonTabs {
+      display: flex;
+      gap: 1vw;
+      button {
+        outline: none;
+        border: none;
+        width: 10vw;
+        border-radius: 70px;
+        padding: 0.4vw;
+        font-weight: bold;
+        background: transparent;
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .Activebutton {
+        background: var(--primary);
+        color: var(--white);
+        border: none;
+      }
+    }
+  }
+}

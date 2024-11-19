@@ -1,0 +1,120 @@
+.custom-select {
+  position: relative;
+  z-index: 9;
+  color: var(--primary);
+  max-height: 3vw;
+  input {
+    font-weight: normal;
+    color: var(--primary) !important;
+    &::placeholder {
+      color: var(--primary) !important;
+    }
+  }
+  .custom_select_icon {
+    transition: transform 0.3s ease;
+  }
+
+  .custom_select_icon.open {
+    transform: rotate(180deg);
+  }
+
+  .options-list {
+    max-height: 120px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+    direction: ltr;
+    color: var(--primary);
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: #999999;
+      border-radius: 5px; /* Adjust border-radius as needed */
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      border-radius: 5px; /* Adjust border-radius as needed */
+      background-color: transparent; /* Set to desired background color */
+    }
+  }
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg2);
+    border: 0.2vw solid var(--primary);
+    border-top: none;
+    padding: 0.1vw 0.3vw;
+    direction: rtl;
+
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+
+    z-index: 9;
+  }
+
+  .option {
+    padding: 0.6vw 1vw;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.select-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4vw;
+  padding: 0.3vw 1vw;
+  cursor: pointer;
+  background: transparent;
+  color: var(--primary);
+  border: 0.2vw solid var(--primary);
+  font-weight: bold;
+  border-radius: 70px;
+  text-align: center;
+  width: 9vw;
+  height: 2.5vw;
+  transition: 0.5s ease-in-out;
+
+  svg {
+    font-size: 1.6vw;
+    color: var(--primary);
+  }
+  .search-input {
+    font-size: 0.8vw;
+    width: 70%;
+    height: 100%;
+    background-color: transparent !important;
+    outline: none;
+    border: none;
+  }
+}
+
+.custom-select.open .select-header {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 30px !important;
+  border-top-left-radius: 30px !important;
+
+  transition: 0.5s ease-in-out;
+  height: 2.5vw !important;
+  // background-color: red !important;
+}
+
+.CustomDatePicker {
+  .ant-picker-outlined {
+    max-height: 2.5vw !important;
+    min-height: 2vw !important;
+  }
+}

@@ -1,0 +1,33 @@
+.reseller_modal_form {
+  width: 100%;
+  .modal_title {
+    height: 5vh;
+  }
+  .sales_info_modal {
+    margin-block: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 60px;
+      border-radius: 50%;
+    }
+    span {
+      h5 {
+        color: var(--value);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}

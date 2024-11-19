@@ -1,0 +1,60 @@
+.Edit_Student {
+  padding-bottom: 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.AddPage {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary);
+
+  > header {
+    color: var(--primary);
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  main {
+    // @include Shadow;
+    background: var(--bg);
+    border-radius: var(--border-radius);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    // gap: 20px;
+    // min-height: 300px;
+
+    > header {
+      background: var(--primary);
+      color: var(--white);
+      width: 100%;
+      border-top-right-radius: var(--border-radius);
+      border-top-left-radius: var(--border-radius);
+      padding: 15px 30px;
+    }
+  }
+  .SubmitButton {
+    outline: none;
+    border: none;
+    background: var(--primary) !important;
+    border-radius: 30px;
+    padding: 15px 10px;
+    width: 130px;
+  }
+  .SubmitButtonparent {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ant-picker-outlined {
+    border-color: var(--border-color) !important;
+  }
+  .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid var(--border-color) !important;
+  }
+  .ant-input-outlined {
+    border-color: var(--border-color);
+  }
+}

@@ -1,0 +1,117 @@
+.ClassesPage {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.buttonAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+
+  > button {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 0.3vw 1.5vw;
+    width: 8vw;
+    height: 2vw;
+    // background: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.8vw;
+  }
+  .EditButton {
+    background: var(--bg);
+    border: 1px solid #d4d4d8;
+    color: var(--text);
+  }
+  .DeleteButton {
+    background: #dc2626;
+  }
+}
+
+.PdfUploader {
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  padding: 10px;
+  .ImagePdfUploader {
+    width: 100%;
+    min-height: 5vw;
+    background-color: #f7f7f7;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 70%;
+    }
+  }
+  .ImagePdfUploaderWrapper {
+    min-height: 5vw;
+  }
+
+  button {
+    outline: none;
+    border: none !important;
+    background: var(--primary);
+    color: var(--white);
+    width: 100% !important;
+    padding: 0.5vw;
+    @include Flex;
+    gap: 10px;
+  }
+  main {
+    background: var(--bg);
+    @include Shadow;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+
+    img {
+      border-radius: var(--border-radius);
+      width: 100% !important;
+    }
+  }
+}
+// .ant-upload-list{
+//     display: none;
+// }
+.ant-upload-wrapper {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.transparent_bg {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.margin_auto {
+  @include Flex;
+  min-width: 100% !important;
+  margin-inline: auto !important;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}

@@ -1,0 +1,14 @@
+.Course {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+  .course_char {
+    width: 60%;
+    background-color: var(--bg);
+    @include Shadow;
+    border-radius: var(--border-radius);
+    padding: 2vw;
+  }
+}

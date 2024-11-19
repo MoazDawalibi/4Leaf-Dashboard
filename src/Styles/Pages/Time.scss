@@ -1,0 +1,9 @@
+.TimePage {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  > header {
+    color: var(--secondary);
+    margin-inline: 10px;
+  }
+}

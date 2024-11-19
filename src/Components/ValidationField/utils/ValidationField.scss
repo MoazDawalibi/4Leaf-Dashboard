@@ -1,0 +1,79 @@
+.LabelWithIcon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.ValidationField {
+  margin-bottom: 10px;
+  position: relative;
+  min-height: 80px;
+  > * {
+    width: 100% !important;
+    min-width: 150px;
+  }
+  .text,
+  .ant-form-item {
+    margin-bottom: 7px !important;
+    font-weight: bold;
+    font-size: 19px;
+
+    > span {
+      color: transparent;
+    }
+  }
+}
+
+//// upload
+.ant-upload-select {
+  width: 100%;
+}
+
+.ant-btn-default {
+  padding: 7px 11px;
+  min-height: var(--fieldHeight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//// number input
+///
+.ant-input-number-affix-wrapper-lg {
+  width: 100%;
+}
+.ValidationFieldCheckbox {
+  // background-color: red;
+}
+
+/// input hight
+.ant-form-item-control-input-content {
+  min-height: var(--fieldHeight);
+}
+
+//// date picker
+.ant-picker-large {
+  min-height: var(--fieldHeight);
+}
+
+/// text area
+///
+
+.ValidationFieldTextArea {
+  .ant-form-item-control-input-content {
+    min-height: 120px;
+  }
+}
+
+.ant-input-textarea-affix-wrapper.ant-input-affix-wrapper {
+  height: 120px;
+}
+
+//// malty select
+///
+.ant-select-multiple {
+  height: auto !important;
+  min-height: 40px;
+  .ant-select-selector {
+    min-height: 40px;
+  }
+}

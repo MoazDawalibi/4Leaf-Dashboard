@@ -1,0 +1,27 @@
+{
+  "name": "SCHOOL_DASHBOARD_EXERCISE",
+  "short_name": "RS",
+  "description": "A social networking platform with automated content moderation and context-based authentication system.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/App/Logo.png",
+      "sizes": "81x113",
+      "type": "image/png"
+    },
+    {
+      "src": "/App/Logo.png",
+      "sizes": "81x113",
+      "type": "image/png"
+    },
+    {
+      "src": "/App/Logo.png",
+      "sizes": "81x113",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

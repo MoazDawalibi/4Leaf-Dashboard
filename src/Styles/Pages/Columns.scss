@@ -1,0 +1,87 @@
+.Color_type_checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  color: white;
+  @include Flex;
+  margin-inline: auto;
+}
+.absence_icon {
+  background-color: red;
+}
+.late_arrival_icon {
+  background-color: orange;
+}
+.presence_icon {
+  background-color: #31ce83 !important;
+}
+
+.earlyDepartureDetails {
+  // color: gray;
+  svg {
+    color: #a098ae;
+  }
+}
+.Column_see_more_details {
+  color: var(--primary);
+  // border-bottom: 1px solid red;
+  width: 100%;
+  text-decoration: underline;
+}
+.custom_add_button_column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom_add_button_column_mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// .note_type_column{
+//     color: white;
+//     border-radius: 10px;
+
+//     padding: 10px;
+//     font-size: 7px;
+// }
+
+.column_student_block {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  @include Flex;
+  margin-inline: auto;
+  // margin-inline: auto;
+  svg {
+    color: white;
+    font-size: 13px;
+  }
+}
+.presence_student {
+  background-color: var(--presence);
+}
+.not_presence_student {
+  border: 2px solid var(--presence);
+}
+
+.absence_student {
+  background-color: var(--absence);
+}
+.not_absence_student {
+  border: 2px solid var(--absence);
+}
+
+.earlyDepartureStudent {
+  background-color: var(--earlyDeparture);
+}
+.not_earlyDepartureStudent {
+  border: 2px solid var(--earlyDeparture);
+}
+
+.lateArrivalStudent {
+  background-color: var(--lateArrival);
+}
+.notLateArrivalStudent {
+  border: 2px solid var(--lateArrival);
+}

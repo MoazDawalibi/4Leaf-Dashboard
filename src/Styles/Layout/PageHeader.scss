@@ -1,0 +1,50 @@
+.page_header {
+  margin-bottom: 0px !important;
+
+  .page_header_links {
+    display: flex;
+    flex-direction: column;
+
+    .page_title {
+      font-weight: bolder;
+      font-size: 24px;
+    }
+
+    .page_links {
+      color: var(--opacity);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.filter_header_top {
+  h4 {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+.PageTitle {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-block: 10px;
+
+  .PageTitleItems {
+    cursor: pointer;
+    color: var(--value);
+    max-width: 65vw;
+    overflow: hidden;
+  }
+}
+
+.PageTitleLastItem {
+  color: #202c4b !important;
+}
+
+.permissions_submit_button {
+  transform: translateY(-40px);
+}

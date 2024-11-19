@@ -1,0 +1,94 @@
+.ant-modal-root .ant-modal-wrap {
+  @include Scrollbar;
+}
+
+.ant-modal .ant-modal-content {
+  padding: 0;
+  border-radius: 10px;
+
+  .ant-modal-close {
+    display: none !important;
+  }
+}
+
+.ModalForm {
+  position: relative;
+
+  .ant-divider-horizontal {
+    // width: 90% !important;
+    margin: 10px 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 16px;
+    z-index: 10;
+    color: var(--black);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    span {
+      font-size: 25px;
+    }
+
+    svg {
+      font-size: 30px;
+      color: var(--value);
+    }
+  }
+
+  .main_modal {
+    padding: 15px 0vw !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  main {
+    .buttons {
+      padding-inline: 0 10px;
+      display: flex;
+      gap: 10px;
+      align-items: end;
+      justify-content: end;
+
+      > button,
+      > div {
+        position: relative;
+        outline: none;
+        border: none;
+        width: 120px;
+        border-radius: 7px;
+        padding: 7px;
+        font-weight: bold;
+        background: var(--primary);
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        &:nth-child(1) {
+          background: var(--white);
+          color: var(--primary);
+          border: 1px solid #c9c9c9;
+        }
+      }
+    }
+  }
+
+  label {
+    color: var(--secondary) !important;
+  }
+}
+
+.ant-modal-root .ant-modal-centered .ant-modal {
+  width: 45vw;
+}
+
+.ant-modal .ant-modal-body {
+  padding-inline: 1vw !important;
+}

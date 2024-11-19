@@ -1,0 +1,367 @@
+.exercise_form_container {
+  display: flex;
+  width: 100% !important;
+  padding-block: 10px 30px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 0px !important;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 30px;
+  // background: #000 !important;
+}
+.exercise_form {
+  margin-bottom: 20px;
+}
+.exercise_form,
+.ChoiceFields {
+  .upload_image_button {
+    .ant-btn {
+      min-height: 15.6vh !important;
+      border: 2px dotted var(--opacity);
+    }
+  }
+  display: flex;
+  gap: 1vw;
+  width: 100%;
+  .textarea_exercise {
+    max-width: 50vw;
+  }
+  .file_exercise {
+    min-width: 10vw;
+    max-width: 10vw;
+    svg {
+      font-size: 30px;
+    }
+    .ant-upload-wrapper
+      .ant-upload-list.ant-upload-list-picture
+      .ant-upload-list-item {
+      min-width: 10vw;
+      max-width: 10vw;
+    }
+  }
+}
+
+.exercise_add {
+  // padding: 2vw;
+  .exercise_add_main {
+    background: var(--bg);
+    padding: 10px 2vw;
+    // max-height: 84vh;
+    overflow-y: scroll;
+    @include Scrollbar();
+    overflow-x: hidden;
+  }
+  .exercise_add_buttons {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    > button,
+    > div {
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      padding: 5px 10px;
+      background: var(--primary);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 16px;
+      min-width: 130px;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+.tags {
+  gap: 10px;
+}
+
+.tag_container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 29px;
+
+  .add_new_button {
+    margin-bottom: 0;
+  }
+}
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.tag {
+  background: rgba(49, 130, 206, 0.15);
+  color: #3182ce;
+  min-width: 50px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  svg {
+  }
+}
+.tagInput {
+  all: unset;
+  min-width: 30px;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 13px;
+}
+.DynamicTags {
+  padding: 2px 15px;
+}
+.suggests {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 29px;
+  flex-wrap: wrap;
+
+  .suggested {
+    all: unset;
+
+    background-color: #fb7d5b;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+  }
+}
+
+.exercise_add_header {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 20px;
+  background: #f2f4f8;
+  border-radius: 10px 10px 0 0;
+  margin: 0 !important;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+  div {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .SettingEdit {
+    display: flex;
+    gap: 20px;
+  }
+  img {
+    cursor: pointer;
+  }
+}
+.inputSmall {
+  width: 100px;
+}
+
+.delete_question_options {
+  margin-top: 25px;
+  color: var(--warning);
+  z-index: 9999;
+  cursor: pointer;
+  padding-left: 10px;
+  .trash_icon {
+    margin-right: 10px !important;
+  }
+}
+
+.answer_status {
+  display: flex;
+  flex-direction: column;
+
+  padding-block: 30px;
+  align-items: flex-end;
+}
+.add_new_button {
+  svg {
+    color: var(--primary);
+  }
+}
+
+.exercise_add_header {
+  article {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: 10px;
+    padding-inline: 20px;
+    font-weight: bold;
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.SelectTag {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exercise_form_width {
+  margin-block: 20px;
+
+  max-width: 50vw;
+  > * {
+    width: 100%;
+  }
+}
+
+.exercise_forms {
+  width: 100%;
+}
+
+.SelectTag {
+  // padding-inline: 20px;
+}
+
+.exercise_add {
+  .add_new_button {
+    // padding-inline: 20px !important;
+  }
+}
+
+.HolderQuestion {
+  transform: translateY(55px);
+  z-index: -1;
+}
+
+.ant-popconfirm .ant-popconfirm-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // >{
+  //   flex: 1;
+  //   min-height: auto;
+  //   min-width: 30px;
+
+  // }
+  .ant-btn {
+    min-height: 30px !important;
+    max-height: 30px !important;
+    min-width: 50px;
+    padding: 5px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.QuestionPractical {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  > header {
+    padding: 30px 2vw 10px 2vw;
+  }
+}
+
+.SelectTag {
+  label {
+    font-weight: bold;
+    font-size: 19px;
+  }
+}
+
+.Choices {
+  padding-inline: 40px;
+  .textarea_exercise,
+  .hint {
+    width: calc(50vw - 30px) !important;
+  }
+  .ValidationField {
+    .text {
+      font-size: 14px;
+    }
+  }
+}
+
+.QuestionFIeld {
+  padding-inline: 20px;
+  .textarea_exercise {
+    width: calc(50vw - 20px) !important;
+  }
+
+  .ValidationField {
+    .text {
+      font-size: 17px;
+    }
+  }
+}
+
+.Choices.ChoicesMalty {
+  .textarea_exercise,
+  .hint {
+    width: calc(50vw - 40px) !important;
+  }
+  .ValidationField {
+    .text {
+      font-size: 14px;
+    }
+  }
+}
+
+.question_header_setting {
+  margin-inline: 40px;
+}
+
+.Choices {
+  transition: 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.exit {
+  transition: 0.5s ease-in-out;
+  animation: fadeOut 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+}
+
+.ListQuestions {
+  @include Scrollbar();
+}
+
+.LaTeXInput {
+  .text {
+    // display: flex !important;
+    align-items: center;
+    gap: 10px;
+    .error_message {
+      color: red;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+}

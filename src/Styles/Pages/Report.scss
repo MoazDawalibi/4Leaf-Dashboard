@@ -1,0 +1,26 @@
+.report_info {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  margin-inline: auto;
+  margin-block: 10px;
+  div {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h4 {
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: bold;
+      p {
+        font-size: 20px;
+        color: var(--subtext) !important;
+      }
+    }
+  }
+}

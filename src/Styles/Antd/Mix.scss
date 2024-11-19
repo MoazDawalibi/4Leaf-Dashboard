@@ -1,0 +1,46 @@
+.PopoverContent {
+  padding: 0;
+  p {
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+      background: #e0e0e0;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
+x .Color_type_checkbox.false {
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: red;
+    border-color: red;
+  }
+}
+
+.PdfUploader {
+  .ant-upload-wrapper .ant-upload-list {
+    display: none;
+  }
+}
+.CustomDatePicker {
+  height: 2.5vw;
+  width: 9vw;
+  .ant-picker-outlined {
+    border: 0.2vw solid var(--primary);
+    border-radius: 70px !important;
+    height: 2.5vw;
+  }
+  input {
+    color: var(--primary) !important;
+    font-size: 0.8vw !important;
+  }
+  .ant-picker {
+    svg {
+      color: var(--primary) !important;
+    }
+  }
+}
+
+.pagination_antd {
+  margin-inline: 16px !important;
+}

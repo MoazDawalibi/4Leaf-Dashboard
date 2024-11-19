@@ -1,0 +1,177 @@
+.search-field {
+  position: relative;
+  z-index: 999;
+  border-radius: 8px;
+  width: 280px;
+  direction: ltr;
+  color: var(--value) b2;
+}
+
+.NavBar {
+  .search-header {
+    color: var(--white) !important;
+    background-color: inherit;
+    border-radius: 8px;
+    border: 1px solid var(--borderColor);
+
+    svg {
+      font-size: 24px;
+    }
+
+    input {
+      color: #fff !important;
+      text-align: end;
+      font-size: 16px;
+    }
+  }
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4vw;
+  padding-inline: 5px;
+  cursor: pointer;
+  background-color: var(--bg);
+  font-weight: bold;
+  border-radius: 10px;
+  height: 40px;
+  transition: 0.5s ease-in-out;
+}
+
+.search__icon {
+  font-size: 1.6vw;
+  color: #fff;
+}
+
+.search__input {
+  font-size: 14px;
+  width: 70%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  position: relative;
+
+  .search__input_text {
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    width: 100px !important;
+  }
+
+  font-weight: normal;
+}
+
+.search_select_icon {
+  transition: transform 0.3s ease;
+}
+
+.search_select_icon.open {
+  transform: rotate(180deg);
+}
+.search-options {
+  border: 1px solid var(--value);
+}
+.search-options-list {
+  max-height: 220px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+  direction: rtl;
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+  @include Scrollbar;
+  &::-webkit-scrollbar {
+    // background: var(--value);
+    // width: 5px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 5px;
+    /* Adjust border-radius as needed */
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 5px;
+    /* Adjust border-radius as needed */
+    background-color: transparent;
+    /* Set to desired background color */
+  }
+}
+
+@mixin CustomScrollbar($color) {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: $color;
+    border-radius: 5px;
+    /* Adjust border-radius as needed */
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 5px;
+    /* Adjust border-radius as needed */
+    background-color: transparent;
+    /* Set to desired background color */
+  }
+}
+
+.search-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--bg);
+  border-top: none;
+  padding: 0.1vw 0.3vw;
+  direction: rtl;
+  // border-radius: 10px;
+  // margin-top: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 99;
+}
+
+.search-option {
+  padding: 0.6vw 1vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4vw;
+}
+
+.search-option:hover {
+  background-color: #deeaf5;
+}
+
+.search-field.open .search-header {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: #fff !important;
+}
+
+.NavBar {
+  .header_search {
+    .search-field {
+      input::placeholder {
+        color: white !important;
+        color: white !important;
+      }
+    }
+  }
+}

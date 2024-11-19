@@ -1,0 +1,65 @@
+.ChartCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-block: 20px;
+  gap: 10px;
+
+  .ChartCard {
+    padding: 10px 10px;
+    @include Shadow;
+    background: var(--bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-block: 10px;
+    min-width: 24%;
+
+    .ChartCard_Right {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      max-width: 90px;
+      h4 {
+        color: var(--primary);
+        font-size: min(14px, 0.7vw);
+        text-wrap: nowrap;
+      }
+      h5 {
+        margin-bottom: 0;
+        font-size: 13px;
+        font-weight: bold;
+        text-wrap: nowrap;
+      }
+      p {
+        font-size: 12px;
+        color: var(--subtext);
+
+        text-wrap: nowrap;
+      }
+    }
+    .ChartCard_Mid {
+      width: 40%;
+      max-width: 6vw;
+
+      > img {
+        width: 100%;
+      }
+      align-self: flex-end;
+    }
+    .ChartCard_Left {
+      margin-top: 4%;
+      span {
+        background-color: var(--primary);
+        padding: 8px 10px;
+        border-radius: 7px;
+        svg {
+          color: var(--white);
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

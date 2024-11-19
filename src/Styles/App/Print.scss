@@ -1,0 +1,29 @@
+@media print {
+  .side_bar {
+    display: none !important;
+  }
+  .Layout_Body {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .NavBar {
+    display: none !important;
+  }
+  .Layout {
+    &::after {
+      display: none !important;
+    }
+  }
+  .ChartCard {
+    display: none !important;
+  }
+  .ChartBigCards {
+    display: none !important;
+  }
+  .table_tabs {
+    display: none !important;
+  }
+  .table_header {
+    display: none !important;
+  }
+}

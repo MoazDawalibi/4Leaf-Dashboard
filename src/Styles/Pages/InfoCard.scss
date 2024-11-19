@@ -1,0 +1,174 @@
+.single_student {
+  display: flex;
+
+  .single_student_body {
+    display: flex;
+    width: 100%;
+
+    .student_info {
+      width: 32%;
+    }
+
+    .student_table {
+      width: 68%;
+    }
+  }
+}
+
+.info_card,
+.address_card,
+.attachments_card {
+  width: 24vw;
+  box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 15px;
+
+  p {
+    color: var(--value);
+  }
+
+  .info_card_header {
+    display: flex;
+    gap: 10px;
+
+    img {
+      width: 24%;
+    }
+
+    .student_name_and_sub {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        color: greenyellow;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .info_card_body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    span {
+      display: flex;
+      justify-content: space-between;
+
+      h4 {
+        color: #202c4b;
+        font-size: 20px;
+      }
+    }
+
+    .info_card_button {
+      background: var(--primary);
+      color: var(--white);
+      padding: 25px 0px;
+      border-radius: 9px;
+    }
+  }
+}
+
+.address_card {
+  margin-block: 30px;
+
+  .address_card_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      margin-block: 20px;
+      gap: 15px;
+      display: flex !important;
+    }
+
+    svg {
+      @include Flex;
+      border-radius: 5px;
+      background: #f2f4f8;
+      width: 40px;
+      height: 40px;
+      padding: 7px;
+    }
+  }
+}
+
+.tab_icon {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1250px) {
+  .single_student {
+    display: flex;
+
+    .single_student_body {
+      display: flex;
+      flex-direction: column !important;
+      width: 100%;
+
+      .student_info {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+
+        .address_card {
+          width: 50%;
+          margin-block: 0 !important;
+          min-height: 30vh;
+        }
+
+        .info_card {
+          width: 50%;
+        }
+      }
+
+      .student_table {
+        width: 100%;
+      }
+
+      .reseller_info {
+        display: flex;
+        flex-wrap: wrap;
+
+        .address_card,
+        .attachments_card,
+        .info_card {
+          width: 45%;
+
+          div {
+            span {
+              font-size: 1.6vw !important;
+            }
+
+            h4 {
+              font-size: 1.8vw;
+            }
+
+            h2 {
+              font-size: 1.6vw !important;
+            }
+
+            h6 {
+              font-size: 1.6vw !important;
+            }
+
+            p {
+              font-size: 1.6vw !important;
+            }
+          }
+        }
+
+        .address_card,
+        .attachments_card {
+          max-height: 40vh !important;
+        }
+      }
+    }
+  }
+}

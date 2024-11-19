@@ -1,0 +1,38 @@
+.ImageBoxField {
+  .ImageBox {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: max(1.5px, 0.1vw) dashed #a9c3f1;
+    margin-block: 10px;
+    border-radius: 5px;
+    z-index: 9999999 !important;
+    .ImageBoxIcon {
+      cursor: pointer;
+    }
+    .imagePreview {
+      max-width: 99%;
+      height: auto;
+      max-height: 99%;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+  }
+  .ImageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .ImageCancelIcon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .ImageBoxIcon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

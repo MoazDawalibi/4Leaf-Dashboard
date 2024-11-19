@@ -1,0 +1,407 @@
+.activity_page {
+}
+
+.MoneyState {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  > header {
+    color: var(--secondary);
+    font-size: 1.4vw;
+    font-weight: 900;
+  }
+
+  > main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #f4f7fe;
+    border-radius: var(--border-radius);
+
+    padding: 50px 30px;
+    width: 100%;
+
+    > button {
+      outline: none;
+      border: none;
+      border-radius: var(--border-radius);
+      padding: 0.5vw 0.7vw;
+      background: var(--primary);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 1.2vw;
+    }
+
+    > div {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 20px;
+
+      div {
+        border: 0.2vw solid var(--primary);
+        height: 3.6vw;
+        width: 3.6vw;
+        background: #f4f7fe;
+        @include Flex;
+        rotate: 45deg;
+        transform: translate(-25%, 35%);
+        /* Rotate the div element */
+
+        svg {
+          color: var(--primary);
+          font-size: 2vw;
+          transform: rotate(-45deg);
+          /* Rotate the div element */
+        }
+      }
+
+      > span {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        background: #f0f7ff;
+        @include Shadow;
+        padding: 0.8vw 3vw;
+        border-radius: var(--border-radius);
+
+        h6 {
+          color: var(--primary);
+          font-size: 1vw;
+        }
+
+        p {
+          font-size: 0.8vw;
+        }
+      }
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+
+      > span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: #f0f7ff;
+        @include Shadow;
+        padding: 0.9vw;
+        border-radius: var(--border-radius);
+
+        h5 {
+          font-weight: 900;
+          font-size: 1.3vw;
+        }
+
+        img {
+          width: 2.5vw;
+        }
+
+        button {
+          outline: none;
+          border: none;
+          border-radius: var(--border-radius);
+          padding: 0.5vw 1vw;
+          background: var(--primary);
+          color: var(--white);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}
+
+.StudentsTime {
+  @include Shadow;
+  padding: 1.4vw;
+  background: var(--bg);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  > header {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.3vw;
+  }
+
+  > main {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6vw 1.5vw;
+    gap: 1vw;
+
+    > article {
+      display: flex;
+      background: #f0f7ff;
+      border-radius: var(--border-radius);
+      padding: 1.5vw 1vw;
+
+      > span {
+        width: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-left: 0.2vw solid var(--primary);
+
+        h6 {
+          font-weight: bold;
+        }
+
+        p[data-color="Red"] {
+          &::after {
+            background-color: red;
+          }
+        }
+
+        p[data-color="Green"] {
+          &::after {
+            background-color: Green;
+          }
+        }
+
+        p[data-color="Orange"] {
+          &::after {
+            background-color: Orange;
+          }
+        }
+
+        p {
+          color: var(--subtext);
+          position: relative;
+          text-align: center;
+
+          &::after {
+            position: absolute;
+            right: -1vw;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: 0.4vw;
+            height: 0.4vw;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vw;
+        width: 12vw;
+        padding: 0 0.8vw;
+
+        .StudentsTimeTotal {
+          color: var(--primary);
+        }
+
+        > span {
+          display: flex;
+          gap: 0.8vw;
+
+          > div {
+            font-size: 0.8vw;
+
+            span {
+              color: var(--subtext);
+
+              font-size: 0.8vw;
+              margin-inline: 0.8vw;
+            }
+          }
+
+          p {
+            color: var(--subtext);
+            font-size: 0.8vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.StudentBehavior {
+  @include Shadow;
+  padding: 1.4vw;
+  background: var(--bg);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  > header {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.3vw;
+  }
+
+  > main {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6vw 1.5vw;
+    gap: 1vw;
+
+    > article {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+      background: #f0f7ff;
+      border-radius: var(--border-radius);
+      padding: 2vw 1.5vw;
+
+      img {
+        width: 3vw;
+        height: 3vw;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        h6 {
+          font-size: 1vw;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 0.9vw;
+          margin-inline: 1vw;
+          color: var(--subtext);
+          position: relative;
+
+          &::after {
+            position: absolute;
+            right: -1vw;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: 0.4vw;
+            height: 0.4vw;
+            border-radius: 50%;
+            background-color: Orange;
+          }
+        }
+      }
+
+      button {
+        outline: none;
+        border: none;
+        border-radius: var(--border-radius);
+        padding: 0.5vw 1.5vw;
+        background: var(--primary);
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 1vw;
+        height: 2vw;
+      }
+    }
+  }
+}
+
+.DataTableWHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  @include Shadow;
+  padding: 20px;
+
+  // max-height: 400px;
+  //         overflow-y: scroll;
+  //         @include  Scrollbar;
+  header {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--secondary);
+  }
+
+  thead {
+    th {
+      font-size: 0.7vw !important;
+      font-weight: bold;
+      color: var(--secondary);
+    }
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+    gap: 2%;
+    margin-top: 40px;
+
+    > div,
+    > span {
+      background: var(--primary);
+      border-radius: var(--border-radius);
+      color: var(--white);
+      @include Shadow;
+      width: 88%;
+      padding: 10px;
+      @include Flex;
+      text-align: center;
+      font-size: 0.7vw;
+    }
+
+    > span {
+      width: 18%;
+    }
+  }
+
+  .DataTable {
+    max-height: 300px !important;
+    overflow-y: scroll;
+    @include Scrollbar;
+  }
+
+  .ant-table-thead {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+    z-index: 1;
+  }
+}
+
+.student_time_detalis {
+  .col_header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    h6 {
+      font-size: 1.2vw;
+      font-weight: bold;
+    }
+  }
+
+  .col_main {
+    padding: 0px 2vw;
+    border-left: 3px solid var(--primary);
+  }
+
+  .lastont {
+    border-left: none !important;
+  }
+}

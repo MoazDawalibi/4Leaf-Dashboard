@@ -1,0 +1,119 @@
+.StudentPage {
+  height: 100%;
+}
+.DetailsSections {
+  background: var(--bg);
+  @include Shadow;
+  // height: 100%;
+  width: 30%;
+  // align-self: stretch;
+  display: flex;
+  gap: 6%;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  padding: 20px;
+  > img {
+    width: 200px;
+    height: 200px;
+    align-self: end;
+    margin-inline: auto;
+  }
+}
+.DetailsCard {
+  background: #f4f7fe;
+  @include Shadow;
+  border-radius: var(--border-radius);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  // height: 180px;
+  // width: 180px;
+  height: 9vw;
+  padding: 20px;
+  min-width: 46%;
+
+  h6 {
+    font-weight: bold;
+    color: var(--secondary);
+    font-size: 1.5vw;
+  }
+
+  div {
+    position: relative;
+    &::after {
+      z-index: 5;
+      content: "";
+      position: absolute;
+      bottom: -0.5vw;
+      right: -1vw;
+      width: 1.5vw;
+      height: 1.5vw;
+      background: url("../../../public/Icon/Add.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  svg {
+    color: #434343;
+    font-size: 4vw;
+    z-index: 1;
+  }
+}
+
+.StudentCount {
+  padding: 20px;
+  @include Shadow;
+  background: var(--bg);
+  border-radius: var(--border-radius);
+
+  header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    h6 {
+      color: var(--secondary);
+    }
+  }
+  main {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 20vw;
+    @include Scrollbar;
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+    gap: 20px;
+    padding: 20px;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      direction: rtl;
+      border-radius: var(--border-radius);
+      background: #f0f7ff;
+      padding: 30px 20px;
+      height: 300px;
+      width: 100%;
+    }
+    svg {
+      color: var(--primary);
+      font-size: 3vw;
+    }
+    span {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h6 {
+        color: var(--text);
+        font-weight: bold;
+        font-size: 1.5vw;
+      }
+      p {
+        color: var(--subtext);
+        font-size: 1vw;
+      }
+    }
+  }
+}

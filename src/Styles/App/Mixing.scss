@@ -1,0 +1,225 @@
+@mixin Shadow {
+  // box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 32px 0px #080f3414;
+}
+
+@mixin Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin Hover {
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+@mixin Hover_outline_characters {
+  &:hover {
+    text-shadow: 2px 2px var(--secondary);
+  }
+}
+
+@mixin underLineText($color1, $color2) {
+  background-image: linear-gradient(90deg, $color1, $color2);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 500ms ease-in-out;
+  &:hover {
+    background-size: 100% 3px;
+  }
+}
+.underLineText {
+  background-image: linear-gradient(90deg, var(--primary), var(--secondary));
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 500ms ease-in-out;
+  &:hover {
+    background-size: 100% 3px;
+  }
+}
+
+@mixin Typewriter {
+  // border-right: 5px solid var(--secondary);
+  width: 100%;
+  word-spacing: nowrap;
+  text-wrap: nowrap;
+  overflow: hidden;
+  animation: typing 6s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@mixin Glitch {
+  letter-spacing: 5px;
+  animation: shift 8s ease-in-out infinite alternate;
+}
+
+@keyframes shift {
+  0%,
+  40%,
+  44%,
+  58%,
+  61%,
+  65%,
+  69%,
+  73%,
+  100% {
+    transform: skewX(0deg);
+  }
+
+  41% {
+    transform: skewX(10deg);
+  }
+
+  42% {
+    transform: skewX(-10deg);
+  }
+
+  59% {
+    transform: skewX(40deg) skewY(10deg);
+  }
+
+  60% {
+    transform: skewX(-40deg) skewY(-10deg);
+  }
+
+  63% {
+    transform: skewX(10deg) skewY(-5deg);
+  }
+
+  70% {
+    transform: skewX(-50deg) skewY(-20deg);
+  }
+
+  71% {
+    transform: skewX(10deg) skewY(-10deg);
+  }
+}
+
+@mixin Scrollbar() {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+  &::-webkit-scrollbar {
+    width: 0.4vw;
+    max-height: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 5px; /* Adjust border-radius as needed */
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 5px; /* Adjust border-radius as needed */
+    background-color: #d3d5d7; /* Set to desired background color */
+  }
+}
+
+@mixin CustomScrollbar($color) {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: $color;
+    border-radius: 5px; /* Adjust border-radius as needed */
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 5px; /* Adjust border-radius as needed */
+    background-color: transparent; /* Set to desired background color */
+  }
+}
+
+@mixin ScrollbarHover($color) {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 3px; /* Adjust border-radius as needed */
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: $color;
+
+      border-radius: 3px; /* Adjust border-radius as needed */
+    }
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: transparent; /* Set to desired background color */
+  }
+}
+.maxWidth150 {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides any content that overflows the container */
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.maxWidth200 {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides any content that overflows the container */
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+//  background-color: rgb(
+//   /* Random value between 0 and 255 for red */
+//   calc(255 * random()),
+//   /* Random value between 0 and 255 for green */
+//   calc(255 * random()),
+//   /* Random value between 0 and 255 for blue */
+//   calc(255 * random())
+// );
+
+@mixin colorIndicator($color) {
+  color: var(--secondary);
+  position: relative;
+  text-align: center;
+  width: 3vw;
+  &::after {
+    background-color: $color;
+    position: absolute;
+    right: -1.4vw;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 50%;
+  }
+}
+
+/* Apply the mixin using CSS variables */
+h6[data-color="Red"] {
+  @include colorIndicator(red);
+}
+
+h6[data-color="Green"] {
+  @include colorIndicator(green);
+}
+
+h6[data-color="Orange"] {
+  @include colorIndicator(orange);
+}

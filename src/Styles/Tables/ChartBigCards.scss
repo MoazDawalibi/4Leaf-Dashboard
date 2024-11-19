@@ -1,0 +1,63 @@
+.ChartBigCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-block: 20px;
+  gap: 10px;
+
+  .ChartBigCard {
+    padding: 30px 20px;
+    @include Shadow;
+    background: var(--bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+    margin-block: 10px;
+
+    .ChartBigCard_Right {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 5px;
+      max-width: 80px;
+      h4 {
+        color: var(--primary);
+        font-size: min(14px, 0.7vw);
+        text-wrap: nowrap;
+      }
+      h5 {
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-wrap: nowrap;
+      }
+      p {
+        font-size: 12px;
+        color: var(--subtext);
+        margin: 0;
+        text-wrap: nowrap;
+      }
+    }
+    .ChartBigCard_Mid {
+      > img {
+        height: 30px;
+        margin-left: 70px;
+      }
+      align-self: flex-end;
+    }
+    .ChartBigCard_Left {
+      span {
+        background-color: var(--primary);
+        padding: 10px 12px;
+        border-radius: 7px;
+        svg {
+          color: var(--white);
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

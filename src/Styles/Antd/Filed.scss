@@ -1,0 +1,133 @@
+// /* Ant picker outlined */
+// .AuthForm .AuthSelect .ant-picker-outlined {
+//   border-radius: 1vw;
+// }
+
+// /* Username */
+// #username {
+//   border-radius: 1vw;
+// }
+
+// /* Ant input affix wrapper */
+// .AuthForm .AuthInput .ant-input-affix-wrapper {
+//   border-radius: 1vw;
+// }
+
+// .remamberMe {
+//   display: flex;
+//   gap: 1vw;
+//   align-items: center;
+//   justify-content: flex-start;
+//   width: 100%;
+//   h6 {
+//     margin-bottom: 0;
+//   }
+//   .SwitchRemamberMe {
+//     color: var(--white);
+//     background: #3182ce;
+//   }
+// }
+
+// ///// select
+// .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+//   border: none;
+// }
+// .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+// .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+//   padding-inline-end: 4vw;
+// }
+// .ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+//   .ant-select-selector {
+//   // height: 3vw;
+// }
+
+// ////////////// file
+
+// .ValidationField
+//   .ant-upload-wrapper.ant-upload-picture-card-wrapper
+//   .ant-upload.ant-upload-select,
+// .ant-upload-wrapper.ant-upload-picture-circle-wrapper
+//   .ant-upload.ant-upload-select {
+//   background: transparent;
+//   border: 0.3vw dashed var(--field);
+// }
+
+// .uploader_error {
+//   .ant-upload.ant-upload-select {
+//     border: 0.3vw dashed red !important;
+//   }
+// }
+// .ValidationField.have_value
+//   .ant-upload-wrapper.ant-upload-picture-card-wrapper
+//   .ant-upload.ant-upload-select,
+// .ant-upload-wrapper.ant-upload-picture-circle-wrapper
+//   .ant-upload.ant-upload-select {
+//   background: transparent;
+//   border: 0.3vw dashed transparent;
+// }
+
+// .CustomFile {
+//   color: var(--subtext);
+//   font-size: 0.7vw !important;
+//   width: 80%;
+//   margin-inline: auto;
+// }
+
+// .ImageCol {
+//   max-width: 50%;
+//   flex: 0;
+// }
+// .ant-upload-wrapper.ant-upload-picture-card-wrapper
+//   .ant-upload.ant-upload-select,
+// .ant-upload-wrapper.ant-upload-picture-circle-wrapper
+//   .ant-upload.ant-upload-select {
+//   width: 11vw;
+//   height: 11vw;
+//   padding: 10px;
+// }
+
+// .uploadIcon {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 3vw;
+//   height: 3vw;
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: #f4f4f4;
+//   border: 1px solid black;
+//   svg {
+//     color: black;
+//     font-size: 1.5vw;
+//   }
+// }
+
+// ////////// INput
+
+// label {
+//   color: var(--label);
+// }
+
+// // .ant-select-dropdown{
+// //     border: 1px solid var(--primary);
+// //     border-top: none;
+// //     z-index: 2;
+// //     transform: translateY(-10px);
+// //     background: var(--bg2);
+// // }
+
+// .Auth_Select {
+//   height: 3vw !important;
+
+//   .ant-select-selector {
+//     border: 1px solid #d9d9d9 !important;
+//     height: 3vw !important;
+//     font-size: 1vw;
+//     border-radius: 1vw;
+//   }
+//   .ant-select-selection-item {
+//     height: 28px;
+//   }
+// }

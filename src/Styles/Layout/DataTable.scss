@@ -1,0 +1,67 @@
+.DataTable {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  // box-shadow: 0px 0px 32px 2px #080F3414;
+}
+
+.ant-table-cell {
+  &::before {
+    background: transparent !important;
+  }
+}
+
+// .ant-table-cell:has(.even-row) {
+//   border-left: 4px solid var(--primary);
+// }
+
+.ClickHere {
+  padding: 0.3vw 0.8vw;
+  border-radius: 4vw;
+  width: 5vw;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  outline: none;
+  font-size: 0.9vw;
+}
+
+.ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:last-child,
+.ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  border-radius: 0 !important;
+}
+
+.TableWithHeader {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  background: var(--bg);
+  // gap: 1vw;
+  border-radius: var(--border-radius);
+  transition: 1s ease-in-out;
+  animation: fadeInRight 1s ease-in-out;
+  max-height: 90vh;
+  min-height: 90vh;
+  overflow-y: scroll;
+  @include Scrollbar;
+
+  > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    h6 {
+      color: var(--primary);
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.ant-picker-body tr .ant-picker-calendar-date {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-picker-calendar
+  .ant-picker-cell-in-view.ant-picker-cell-selected:not(
+    .ant-picker-cell-disabled
+  )
+  .ant-picker-cell-inner,
+.ant-picker-calendar
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(
+    .ant-picker-cell-disabled
+  )
+  .ant-picker-cell-inner,
+.ant-picker-calendar
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(
+    .ant-picker-cell-disabled
+  )
+  .ant-picker-cell-inner {
+  border-radius: 50%;
+  // max-width: 70px;
+
+  &::before {
+    border: none !important;
+    outline: none;
+  }
+}
+
+.ant-picker-calendar .ant-picker-panel {
+  border-top: 0px solid transparent;
+  padding: 0vw 1vw;
+}
+tbody {
+  .ant-picker-calendar .ant-picker-content td {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+.ant-picker-calendar .ant-picker-panel {
+  background: var(--bg);
+}
+.ant-picker-calendar-mini {
+  background: var(--bg);
+}
+.ant-picker-calendar .ant-picker-content td {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ant-picker-calendar .ant-picker-date-panel .ant-picker-content th {
+  padding-bottom: 1vw;
+}

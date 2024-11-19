@@ -1,0 +1,55 @@
+.PercentageCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-block: 20px;
+  gap: 10px;
+
+  .PercentageCard {
+    padding: 20px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.07);
+    background: var(--bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-block: 10px;
+    gap: 10px;
+
+    .PercentageCard_Right {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      max-width: 6vw;
+      h4 {
+        color: var(--primary);
+        font-size: min(14px, 0.7vw);
+        text-wrap: nowrap;
+      }
+      h5 {
+        margin-bottom: 0;
+        font-size: 13px;
+        font-weight: bold;
+        text-wrap: nowrap;
+      }
+      p {
+        font-size: 12px;
+        color: var(--subtext);
+
+        text-wrap: nowrap;
+      }
+    }
+    .PercentageCard_Mid {
+      > img {
+        width: 35px;
+        height: 35px;
+        margin-left: 30px;
+      }
+      align-self: flex-end;
+    }
+    .PercentageCard_Left {
+      margin-top: 4%;
+    }
+  }
+}

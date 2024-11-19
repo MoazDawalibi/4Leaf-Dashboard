@@ -1,0 +1,104 @@
+.header_cards_section {
+  display: flex;
+  padding: 1.3vw 2vw;
+  width: 100%;
+  display: flex;
+  background: var(--bg);
+  border-radius: var(--border-radius);
+  position: relative;
+  @include Shadow;
+  transition: 1s ease-in-out;
+  animation: fadeInRight 1s ease-in-out;
+
+  .CountCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    width: 100%;
+    min-height: 60px;
+  }
+  .CountCard.active {
+    background: #e0e0e0;
+  }
+  .CountCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vw;
+    // margin-bottom: 2vw;
+    padding-block: 1.3vw;
+    text-align: center;
+
+    width: 12vw;
+    border-radius: var(--border-radius);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background: #e0e0e0;
+      transition: 0.4s ease-in-out;
+    }
+
+    h4 {
+      font-size: 1.2vw;
+      margin-bottom: 0;
+      font-weight: normal;
+      color: #626262;
+    }
+    h5 {
+      color: var(--secondary);
+      font-size: 0.8vw;
+      font-weight: bold;
+    }
+
+    i {
+      width: 3.6vw;
+      height: 3.6vw;
+      border-radius: 50%;
+      background: var(--utils_color_one);
+      @include Flex;
+      margin-bottom: 4px;
+
+      svg {
+        color: var(--white);
+        font-size: 1.6vw;
+      }
+    }
+  }
+}
+
+.Add_button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1vw 1.4vw;
+  background: var(--primary);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1.2vw;
+  height: 3vw;
+  width: 12vw;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.ShowMoreButton {
+  position: absolute;
+  bottom: 1vw;
+  right: 0.5vw;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+  height: 1.7vw;
+  width: 1.7vw;
+  @include Flex;
+
+  svg {
+    font-size: 1.5vw;
+  }
+}

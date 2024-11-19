@@ -1,0 +1,116 @@
+.filter_header {
+  padding: 20px 20px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 32px 2px #080f3414;
+  // max-width: 85vw;
+  overflow-x: hidden;
+  min-height: fit-content;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .filter_and_order_by {
+      display: flex;
+      gap: 10px;
+
+      .filter_button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 190px;
+        padding-inline: 20px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid var(--opacity) !important;
+        transition: ease-in-out 0.4s;
+        cursor: pointer;
+
+        &:hover {
+          background: var(--bg4);
+        }
+
+        svg {
+          font-size: 25px;
+        }
+      }
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      color: var(--value);
+
+      .pagination_select,
+      .order_by_select,
+      .filter_modal_select {
+        border: 1px solid var(--opacity);
+        border-radius: 10px;
+
+        .addition_select_icon {
+          font-size: 25px;
+        }
+
+        div {
+          color: var(--value);
+        }
+      }
+
+      p {
+        padding-inline: 10px;
+      }
+    }
+  }
+
+  .search-field {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    .search__input {
+      width: 90%;
+      text-align: end;
+    }
+
+    .search__icon {
+      color: var(--primary);
+    }
+  }
+}
+
+.pagination_column,
+.order_by_filter {
+  .ant-select-outlined:not(.ant-select-disabled):not(
+      .ant-select-customize-input
+    ):not(.ant-pagination-size-changer):hover
+    .ant-select-selector,
+  .ant-select-outlined:not(.ant-select-disabled):not(
+      .ant-select-customize-input
+    ):not(.ant-pagination-size-changer):hover
+    .ant-select-selector {
+    transition: ease-in-out 0.4s !important;
+    cursor: pointer !important;
+
+    &:hover {
+      background: var(--bg4) !important;
+    }
+  }
+}
+
+.filter_modal_add_button,
+.filter_modal_cancel_button {
+  padding: 20px 10px !important;
+}
+
+.filter_modal_add_button {
+  padding: 20.8px 10px !important;
+}
+
+@media screen and (max-width: 800px) {
+  .filter_modal_add_button,
+  .filter_modal_cancel_button {
+    font-size: 8px !important;
+  }
+}
+
+.model_sub_children {
+  padding-bottom: 30px;
+}

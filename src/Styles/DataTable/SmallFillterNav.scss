@@ -1,0 +1,23 @@
+.SmallFillterNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > header {
+    color: var(--primary);
+    span {
+      color: var(--subtext);
+    }
+  }
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > header {
+    color: var(--primary);
+    span {
+      color: var(--subtext);
+    }
+  }
+}

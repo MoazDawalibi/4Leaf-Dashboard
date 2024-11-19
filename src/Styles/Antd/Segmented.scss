@@ -1,0 +1,18 @@
+.Segmented {
+  color: red !important;
+  width: 40vw;
+}
+.ant-segmented.ant-segmented-block .ant-segmented-item {
+  align-self: center;
+}
+.ant-segmented.ant-segmented-block {
+  padding: 0px 1vw;
+}
+.ant-segmented .ant-segmented-item-label {
+  color: var(--text);
+  // min-height : 2.4vw;
+  padding: 5px 0px !important ;
+}
+.ant-segmented.ant-segmented-block .ant-segmented-item {
+  border-radius: 10px !important;
+}
