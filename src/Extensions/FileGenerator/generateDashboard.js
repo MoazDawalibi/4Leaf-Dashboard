@@ -15,7 +15,11 @@ const commands = [
   `node src/Extensions/FileGenerator/generateModelForm.js ${fileName}`,
   `node src/Extensions/FileGenerator/generateFilterForm.js ${fileName}`,
   `node src/Extensions/FileGenerator/generateType.js ${fileName}`,
-  `node src/Extensions/FileGenerator/generateParamsEnum.js ${fileName}` 
+  `node src/Extensions/FileGenerator/generateParamsEnum.js ${fileName}`, 
+  `node src/Extensions/FileGenerator/generateRoute.js ${fileName}`,
+  `node src/Extensions/FileGenerator/generateModelEnum.js ${fileName}`,
+  `node src/Extensions/FileGenerator/generateAbility.js ${fileName}`
+
 ];
 
 // Execute each command sequentially
