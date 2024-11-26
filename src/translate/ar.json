@@ -13,7 +13,6 @@
     "Password_is_required": "كلمة المرور مطلوبة",
     "Password_must_be_at_least_8_characters_long": "يجب أن تكون كلمة المرور مكونة من 8 أحرف على الأقل",
     "must_be_at_least_6_characters_long": "يجب أن تكون  مكونة من 6 أحرف على الأقل",
-
     "Nationality_is_required": "الجنسية مطلوبة",
     "Address_is_required": "العنوان مطلوب",
     "Place_of_birth_is_required": "مكان الميلاد مطلوب",
@@ -156,7 +155,8 @@
     "financial_collection": "التحصيلات",
     "change_direction": "تغيير الاتجاه",
     "notification_details": "تفاصيل الإشعار",
-    "users": "المستخدمون"
+    "users": "المستخدمون",
+    "category":"الأصناف"
   },
   "columns": {
     "id": "الرقم التعريفي",
@@ -249,7 +249,10 @@
     "question_name": "اسم السؤال",
     "body": "نص الإشعار",
     "seen": "عدد المستخدمين",
-    "notifiable_type": "المستخدمون"
+    "notifiable_type": "المستخدمون",
+    "account_name":"اسم الحساب",
+    "note":"الملاحظة",
+    "role_type":"نوع المستخدم"
   },
   "practical": {
     "to_confirm_deletion_please_re_enter": "لتأكيد الحذف، يرجى إعادة الإدخال",
@@ -435,7 +438,11 @@
     "city": "مدينة",
     "financialCollection": "التحصيلات",
     "notification": "إدارة الاشعارات",
-    "notifications": "إشعار"
+    "notifications": "إشعار",
+    "ShippingFees":"أجور الشحن",
+    "customers":"الزبائن",
+    "Category":"صنف",
+    "StaticInfo":"معلومات ثابتة"
   },
   "education_class_actions": {
     "Student_Records": "سجلات الطلاب",
@@ -583,7 +590,9 @@
     "body": "النص",
     "seen": "شوهدت",
     "notifiable_type": "نوع الاشعار",
-    "users":"المستخدمون"
+    "users":"المستخدمون",
+    "account_name":"اسم الحساب",
+    "role_type":"نوع المستخدم"
   },
   "select": {
     "enums": {
@@ -923,7 +932,11 @@
     "city": "مدينة",
     "coupon": "قسيمة",
     "financial_collection": "التحصيلات",
-    "notification": "إدارة الاشعارات"
+    "notification": "إدارة الاشعارات",
+    "shipping_fees":"أجور الشحن ",
+    "customers":"الزبائن",
+    "category":"الأصناف",
+    "static_infos":"المعلومات الثابتة"
   },
   "message": {
     "some_thing_went_wrong": "حدث خطأ ما",
@@ -977,7 +990,11 @@
     "financial_collection": "التحصيلات",
     "show_collection": "حصيلة",
     "notification": "إدارة الاشعارات",
-    "manage_notification": "إدارة الإشعارات"
+    "manage_notification": "إدارة الإشعارات",
+    "ShippingFees":"أجور الشحن",
+    "customers":"الزبائن",
+    "Category":"الأصناف",
+    "StaticInfo":"المعلومات الثابتة"
   },
   "page_header": {
     "home": "لوحة القيادة",
@@ -1037,7 +1054,12 @@
     "roles": "الدور",
     "coupon": "قسيمة",
     "notification": "إدارة الاشعارات",
-    "add_notification":"إدارة الاشعارات"
+    "add_notification":"إدارة الاشعارات",
+    "ShippingFees":"أجور الشحن",
+    "customers":"الزبائن",
+    "shipping_fees":"أجور الشحن",
+    "Category":"الأصناف",
+    "StaticInfo":"المعلومات الثابتة"
   },
   "table": {
     "student": "قائمة الطلاب",
@@ -1059,7 +1081,12 @@
     "upload_your_photo_and_personal_data_here": "قم بتحميل صورتك وبياناتك الشخصية هنا",
     "get_notified_of_whats_happening_now_you_can_turn_it_off_at_any_time": "احصل على إشعار بما يحدث الآن ، يمكنك إيقاف تشغيله في أي وقت",
     "financial_collection": "التحصيلات",
-    "show_collection": "حصيلة"
+    "show_collection": "حصيلة",
+    "ShippingFees":"أجور الشحن",
+    "customers":"الزبائن",
+    "Category":"الأصناف",
+    "users":"المستخدمون",
+    "StaticInfo":"المعلومات الثابتة"
   },
   "card": {
     "residual": "المتبقي",

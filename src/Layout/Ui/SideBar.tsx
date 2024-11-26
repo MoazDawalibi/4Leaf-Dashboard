@@ -7,13 +7,14 @@ import useAuthState from "../../zustand/AuthState";
 import { hasAbility } from "../../utils/hasAbility";
 import { useTranslation } from "react-i18next";
 import { getLocalStorage } from "../../utils/LocalStorage";
-import { BRANCH_OBJECT_KEY } from "../../config/AppKey";
+import { BRANCH_OBJECT_KEY, TOKEN_KEY } from "../../config/AppKey";
 import { MenuItem } from "../../Components/Layout/SideBar/MenuItem";
 import { CiMenuBurger, CiSettings } from "react-icons/ci";
 import { IoIosMenu } from "react-icons/io";
 import { HiMenuAlt2, HiMenuAlt3 } from "react-icons/hi";
 import { RoleByType } from "../../utils/RoleByType";
 import { useFilterStateState } from "../../zustand/Filter";
+import { useLogoutAdmin } from "../../api/users";
 
 const SideBar = ({
   isOpen,
@@ -25,8 +26,13 @@ const SideBar = ({
   const location = useLocation();
   const navigate = useNavigate();
   const { logout } = useAuthState();
+  const { mutate } = useLogoutAdmin();
+  const token = localStorage.getItem(TOKEN_KEY);
+  
   const [t] = useTranslation();
-
+  const handleLogout = () => {
+    mutate({token})
+  }
   const toggleSidebar = () => {
     setIsOpen((prev: boolean) => !prev);
   };
@@ -45,13 +51,13 @@ const SideBar = ({
       <div className="side_bar_links">
         <p>{t("sidebar.main_menu")}</p>
         {menuItems.map((item, index) => {
-          const useAbility = hasAbility(item.abilities, item.abilities_value);
-          if (!useAbility) {
-            return <React.Fragment key={index}></React.Fragment>;
-          }
-          if (!RoleByType(item)) {
-            return <React.Fragment key={index}></React.Fragment>;
-          }
+          // const useAbility = hasAbility(item.abilities, item.abilities_value);
+          // if (!useAbility) {
+          //   return <React.Fragment key={index}></React.Fragment>;
+          // }
+          // if (!RoleByType(item)) {
+          //   return <React.Fragment key={index}></React.Fragment>;
+          // }
           return (
             <MenuItem
               key={index}
@@ -65,15 +71,14 @@ const SideBar = ({
       </div>
       <div className="side_bar_setting">
         <p>{t("sidebar.setting")}</p>
-        <div
-        // onClick={() => {navigate("/setting")}}
-        >
+        <div>
           <CiSettings />
           <span>{t("sidebar.setting")}</span>
         </div>
         <div
           className="logout_button"
           onClick={() => {
+            handleLogout()
             logout();
             navigate("/auth");
           }}

@@ -6,10 +6,10 @@ import { RenderRouteElement } from "./RenderRouteElement";
 
 export const renderRoutesRecursively = (routes: TMenuItem[]) =>
   routes.map((route: TMenuItem) => {
-    const useAbility = hasAbility(route.abilities, route.abilities_value);
-    if (!useAbility) {
-      return false;
-    }
+    // const useAbility = hasAbility(route.abilities, route.abilities_value);
+    // if (!useAbility) {
+    //   return false;
+    // }
 
     return (
       <React.Fragment key={route.path}>

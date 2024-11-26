@@ -1,4 +1,9 @@
 export enum ParamsEnum {
+  STATICINFO_ID = "staticinfo_id",
+  USERS_ID = "users_id",
+  CATEGORY_ID = "category_id",
+  CUSTOMERS_ID = "customers_id",
+  SHIPPINGFEES_ID = "shippingfees_id",
   STUDENT_ID = "student_id",
   COURSE_ID = "course_id",
   EDUCATION_CLASS_ID = "edu_class_id",

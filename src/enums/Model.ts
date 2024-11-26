@@ -1,4 +1,20 @@
 export enum ModalEnum {
+  STATIC_INFO_EDIT = "static_info.edit",
+  STATIC_INFO_ADD = "static_info.add",
+  STATIC_INFO_DELETE = "static_info.delete",
+  
+  USERS_EDIT = "users.edit",
+  USERS_ADD = "users.add",
+  USERS_DELETE = "users.delete",
+  CATEGORY_EDIT = "category.edit",
+  CATEGORY_ADD = "category.add",
+  CATEGORY_DELETE = "category.delete",
+  CUSTOMERS_EDIT = "customers.edit",
+  CUSTOMERS_ADD = "customers.add",
+  CUSTOMERS_DELETE = "customers.delete",
+  SHIPPING_FEES_EDIT = "shipping_fees.edit",
+  SHIPPING_FEES_ADD = "shipping_fees.add",
+  SHIPPING_FEES_DELETE = "shipping_fees.delete",
   ////// division
   DIVISION_ADD = "division.add",
   //// FILLTER

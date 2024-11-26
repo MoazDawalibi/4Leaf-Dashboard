@@ -26,6 +26,7 @@ const ColumnsImage = ({ src }: any) => {
       width={45}
       height={45}
       src={imageUrl}
+      //"BaseUrl/storage/grade/71Q5b1SB2qBGEu4t3KIWephzQHBGwE7tTbZ2LZwe.jpg"
       className="p-1 mb-1 columnImage"
       onError={() => setHasError(true)} // Triggered when image fails to load
       preview={{

@@ -14,16 +14,16 @@ const DataTable: React.FC<DataTableProps> = ({
   useColumns,
   ...props
 }) => {
-  const data: any[] = response?.data?.data || [];
+  const data: any[] = response?.data?.data?.data || [];
 
   const columns = useColumns();
-  const { pagination, handlePageChange } = usePagination(response?.data);
+  const { pagination, handlePageChange } = usePagination(response?.data?.data);  
   const [t] = useTranslation();
   const getRowClassName = (_record: any, index: number): string => {
     return index % 2 === 0 ? "even-row" : "odd-row";
   };
   const isRefetching = response?.isRefetching;
-  const isLoading = response?.isLoading;
+  const isLoading = response?.isLoading;  
   const dataLength = data?.length;
   const { setDataTableLength } = useDataTableState();
   useEffect(() => {

@@ -17,13 +17,16 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      background: var(--primary);
+      padding: 15px;
+      border-radius: 10px  10px 0px 0;
       color: var(--white);
     }
   }
 
   .AuthForm {
-    height: 440px;
-    width: 600px;
+    height: 450px;
+    width: 700px;
     min-width: 300px;
 
     // box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.2);
@@ -34,8 +37,12 @@
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 0 0px 10px 10px;
     gap: 10px;
+    .login_logo_container{
+      display: flex;align-items: center;justify-content: space-between;
+      width: 100%;
+    }
     .AuthInput {
       min-width: 100% !important;
       margin-bottom: 30px;

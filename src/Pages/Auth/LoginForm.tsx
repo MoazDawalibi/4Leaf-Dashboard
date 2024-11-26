@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Formik } from "formik";
 import useAuthState from "../../zustand/AuthState";
-import { useLoginAdmin } from "../../api/auth";
 import FormField from "./FormField";
 import { initialValues, validationSchema } from "./formUtils";
 import { FormValues } from "../../types/Auth";
@@ -9,10 +8,13 @@ import { useTranslation } from "react-i18next";
 import { getLocalStorage } from "../../utils/LocalStorage";
 import { USER_KEY } from "../../config/AppKey";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import { useLoginAdmin } from "../../api/users";
 
 const LoginForm = () => {
   const { mutate, isLoading, isSuccess, data } = useLoginAdmin();
   const [t] = useTranslation();
+  const Navigate = useNavigate();
   const handelSubmit = (values: FormValues) => {
     mutate(values);
 
@@ -29,6 +31,7 @@ const LoginForm = () => {
   useEffect(() => {
     if (isSuccess) {
       login(LoginData?.data as any);
+      Navigate('/');
     }
   }, [isSuccess]);
 

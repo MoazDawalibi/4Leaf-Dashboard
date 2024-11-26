@@ -5,11 +5,11 @@ export function hasAbility(
   category: ABILITIES_ENUM,
   value: ABILITIES_VALUES_ENUM,
 ): boolean {
-  const abilitiesString = localStorage?.getItem(ABILITIES_KEY);
+  // const abilitiesString = localStorage?.getItem(ABILITIES_KEY);
 
-  if (!abilitiesString) {
-    return false;
-  }
+  // if (!abilitiesString) {
+  //   return false;
+  // }
   if (category === ABILITIES_ENUM?.PASS) {
     return true;
   }

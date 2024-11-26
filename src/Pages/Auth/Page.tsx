@@ -8,10 +8,10 @@ const Auth = () => {
   return (
     <div className="Auth">
       <div className="In_Auth">
-        {/* <header> */}
-        {/* <h1>{t("header.Welcome")}</h1>
-          <p>{t("header.Enter your email and password to log in")}</p> */}
-        {/* </header> */}
+        <header>
+        <h1>{t("header.Welcome")}</h1>
+          <p>{t("header.Enter your email and password to log in")}</p>
+        </header>
         <LoginForm />
       </div>
     </div>

@@ -35,13 +35,13 @@ const App = () => {
       {renderRoutesRecursively(menuItems)}
 
       {CrudRoute.map((route) => {
-        const useAbility = hasAbility(route.abilities, route.abilities_value);
-        if (!RoleByType(route)) {
-          return false;
-        }
-        if (!useAbility) {
-          return false;
-        }
+        // const useAbility = hasAbility(route.abilities, route.abilities_value);
+        // if (!RoleByType(route)) {
+        //   return false;
+        // }
+        // if (!useAbility) {
+        //   return false;
+        // }
         return (
           <Route
             key={route.path ?? ""}

@@ -7,26 +7,26 @@ import { getInitialValues, getValidationSchema } from "./formUtil";
 import { ModalEnum } from "../../../enums/Model";
 import { useObjectToEdit } from "../../../zustand/ObjectToEditState";
 import { useTranslation } from "react-i18next";
-import { useUpdateAdmin } from "../../../api/users";
+// import { useUpdateAdmin } from "../../../api/users";
 
 const ModalForm: React.FC = () => {
   const { isOpen, setIsOpen } = useModalState((state) => state);
-  const { mutate, isSuccess, isLoading } = useUpdateAdmin();
+  // const { mutate, isSuccess, isLoading } = useUpdateAdmin();
   const { setObjectToEdit } = useObjectToEdit();
 
-  useEffect(() => {
-    if (isSuccess) {
-      setIsOpen("");
-      setObjectToEdit({});
-    }
-  }, [setIsOpen, isSuccess]);
+  // useEffect(() => {
+  //   if (isSuccess) {
+  //     setIsOpen("");
+  //     setObjectToEdit({});
+  //   }
+  // }, [setIsOpen, isSuccess]);
 
   const handleSubmit = (values: any) => {
     //   console.log(values,"values");
 
-    mutate({
-      ...values,
-    });
+    // mutate({
+    //   ...values,
+    // });
   };
 
   const handleCancel = () => {
@@ -54,9 +54,9 @@ const ModalForm: React.FC = () => {
             <ModelBody />
             <div className="buttons">
               <div onClick={handleCancel}>{t("practical.back")}</div>
-              <button disabled={isLoading} type="submit">
+              <button disabled={false} type="submit">
                 {t("practical.edit")}
-                {isLoading && (
+                {(
                   <span className="Spinier_Div">
                     <Spin />
                   </span>

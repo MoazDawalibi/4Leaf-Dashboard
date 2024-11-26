@@ -1,4 +1,4 @@
-export const PROJECT_NAME = "ZAKER_EXERCISE";
+export const PROJECT_NAME = "4_LEAF";
 
 export const LANGUAGE_KEY = PROJECT_NAME + "_LANGUAGE";
 export const Currency = "ل.س";

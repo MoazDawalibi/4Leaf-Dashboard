@@ -48,7 +48,7 @@ const SelectField = ({
           {...(isLoading && { loading: isLoading })}
           size="large"
           className={`${className} ${isError ? "SelectError" : ""} w-100`}
-          value={formik.values[name]}
+          value={formik?.values[name]}
           allowClear
           {...(isMulti && { mode: "multiple" })}
           onChange={onChange || SelectableChange}

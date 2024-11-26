@@ -61,7 +61,7 @@ export const useColumns = () => {
       render: (_text, record) => record?.id,
     },
     {
-      title: ("columns.name"),
+      title: t("columns.name"),
       dataIndex: "name",
       key: "name",
       align: "center",
