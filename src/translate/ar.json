@@ -253,7 +253,17 @@
     "account_name":"اسم الحساب",
     "note":"الملاحظة",
     "role_type":"نوع المستخدم",
-    "customer_type":"نوع الزبون"
+    "customer_type":"نوع الزبون",
+    "currency_price":"سعر العملة",
+    "customer_currency_price":"سعر العملة للزبون",
+    "start_date":"وقت البداية",
+    "end_date":"وقت النهاية",
+    "order_count":"عدد الطلبات",
+    "product_count":"عدد المنتجات",
+    "shipping_fees_total_profit":"مرابح الشحن",
+    "currency_profit":"مرابح العملة",
+    "total_profit":"إجمالي المرابح",
+    "total_price":"إجمالي السعر"
   },
   "practical": {
     "to_confirm_deletion_please_re_enter": "لتأكيد الحذف، يرجى إعادة الإدخال",
@@ -443,7 +453,8 @@
     "ShippingFees":"أجور الشحن",
     "customers":"الزبائن",
     "Category":"صنف",
-    "StaticInfo":"معلومات ثابتة"
+    "StaticInfo":"معلومات ثابتة",
+    "Shipment":"طلبية"
   },
   "education_class_actions": {
     "Student_Records": "سجلات الطلاب",
@@ -594,7 +605,17 @@
     "users":"المستخدمون",
     "account_name":"اسم الحساب",
     "role_type":"نوع المستخدم",
-    "customer_type":"نوع الزبون"
+    "customer_type":"نوع الزبون",
+    "currency_price":"سعر العملة",
+    "customer_currency_price":"سعر العملة للزبون",
+    "start_date":"وقت البداية",
+    "end_date":"وقت النهاية",
+    "order_count":"عدد الطلبات",
+    "product_count":"عدد المنتجات",
+    "shipping_fees_total_profit":"مرابح الشحن",
+    "currency_profit":"مرابح العملة",
+    "total_profit":"إجمالي المرابح",
+    "total_price":"إجمالي السعر"
   },
   "select": {
     "enums": {
@@ -938,7 +959,8 @@
     "shipping_fees":"أجور الشحن ",
     "customers":"الزبائن",
     "category":"الأصناف",
-    "static_infos":"المعلومات الثابتة"
+    "static_infos":"المعلومات الثابتة",
+    "shipments":"الطلبيات"
   },
   "message": {
     "some_thing_went_wrong": "حدث خطأ ما",
@@ -996,7 +1018,8 @@
     "ShippingFees":"أجور الشحن",
     "customers":"الزبائن",
     "Category":"الأصناف",
-    "StaticInfo":"المعلومات الثابتة"
+    "StaticInfo":"المعلومات الثابتة",
+    "Shipment":"الطلبيات"
   },
   "page_header": {
     "home": "لوحة القيادة",
@@ -1061,7 +1084,8 @@
     "customers":"الزبائن",
     "shipping_fees":"أجور الشحن",
     "Category":"الأصناف",
-    "StaticInfo":"المعلومات الثابتة"
+    "StaticInfo":"المعلومات الثابتة",
+    "Shipment":"الطلبيات"
   },
   "table": {
     "student": "قائمة الطلاب",
@@ -1088,7 +1112,8 @@
     "customers":"الزبائن",
     "Category":"الأصناف",
     "users":"المستخدمون",
-    "StaticInfo":"المعلومات الثابتة"
+    "StaticInfo":"المعلومات الثابتة",
+    "Shipment":"الطلبيات"
   },
   "card": {
     "residual": "المتبقي",

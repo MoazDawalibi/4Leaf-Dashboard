@@ -1,4 +1,7 @@
 export enum ModalEnum {
+  SHIPMENT_EDIT = "shipment.edit",
+  SHIPMENT_ADD = "shipment.add",
+  SHIPMENT_DELETE = "shipment.delete",
   STATIC_INFO_EDIT = "static_info.edit",
   STATIC_INFO_ADD = "static_info.add",
   STATIC_INFO_DELETE = "static_info.delete",

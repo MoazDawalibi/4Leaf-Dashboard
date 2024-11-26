@@ -25,6 +25,8 @@ const Customers = React.lazy(() => import("./Pages/customers/Page"));
 const Category = React.lazy(() => import("./Pages/Category/Page"));
 const User = React.lazy(() => import("./Pages/users/Page"));
 const StaticInfo = React.lazy(() => import("./Pages/StaticInfo/Page"));
+const Shipment = React.lazy(() => import("./Pages/Shipment/Page"));
+
 
 
 
@@ -109,6 +111,18 @@ export const menuItems: TMenuItem[] = [
     text: "sidebar.static_infos",
     path: "/static_info",
     abilities: ABILITIES_ENUM?.StaticInfo,
+    abilities_value: ABILITIES_VALUES_ENUM.INDEX,
+    type: UserTypeEnum?.PASS,
+    prevPath: 0,
+  },
+
+  {
+    header: "page_header.shipment",
+    element: <Shipment />,
+    icon: <FaInfo />,
+    text: "sidebar.shipments",
+    path: "/shipment",
+    abilities: ABILITIES_ENUM?.Shipment,
     abilities_value: ABILITIES_VALUES_ENUM.INDEX,
     type: UserTypeEnum?.PASS,
     prevPath: 0,

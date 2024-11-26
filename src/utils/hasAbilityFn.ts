@@ -74,3 +74,21 @@ export const canDeleteStaticInfo = hasAbility(
   ABILITIES_ENUM.StaticInfo,
   ABILITIES_VALUES_ENUM.DELETE,
 );
+
+// shipment
+export const canAddShipment = hasAbility(
+  ABILITIES_ENUM.Shipment,
+  ABILITIES_VALUES_ENUM.STORE,
+);
+export const canEditShipment = hasAbility(
+  ABILITIES_ENUM.Shipment,
+  ABILITIES_VALUES_ENUM.UPDATE,
+);
+export const canDeleteShipment = hasAbility(
+  ABILITIES_ENUM.Shipment,
+  ABILITIES_VALUES_ENUM.DELETE,
+);
+export const canShowShipment = hasAbility(
+  ABILITIES_ENUM.Shipment,
+  ABILITIES_VALUES_ENUM.SHOW,
+);
