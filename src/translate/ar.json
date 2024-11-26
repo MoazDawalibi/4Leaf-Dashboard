@@ -252,7 +252,8 @@
     "notifiable_type": "المستخدمون",
     "account_name":"اسم الحساب",
     "note":"الملاحظة",
-    "role_type":"نوع المستخدم"
+    "role_type":"نوع المستخدم",
+    "customer_type":"نوع الزبون"
   },
   "practical": {
     "to_confirm_deletion_please_re_enter": "لتأكيد الحذف، يرجى إعادة الإدخال",
@@ -592,7 +593,8 @@
     "notifiable_type": "نوع الاشعار",
     "users":"المستخدمون",
     "account_name":"اسم الحساب",
-    "role_type":"نوع المستخدم"
+    "role_type":"نوع المستخدم",
+    "customer_type":"نوع الزبون"
   },
   "select": {
     "enums": {

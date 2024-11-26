@@ -63,6 +63,14 @@ export const useColumns = () => {
       ellipsis: true,
     },
     {
+      title: t("columns.customer_type"),
+      dataIndex: "customer_type",
+      key: "customer_type",
+      align: "center",
+      render: (_text, record) => record?.customer_type,
+      ellipsis: true,
+    },
+    {
       title: t("columns.phone_number"),
       dataIndex: "phone_number",
       key: "phone_number",
