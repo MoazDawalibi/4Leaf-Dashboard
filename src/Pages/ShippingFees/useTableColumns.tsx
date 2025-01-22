@@ -54,6 +54,24 @@ export const useColumns = () => {
       render: (_text, record) => record?.name,
       ellipsis: true,
     },
+
+    {
+      title: t("columns.price"),
+      dataIndex: "price",
+      key: "price",
+      align: "center",
+      render: (_text, record) => record?.price,
+      ellipsis: true,
+    },
+
+    {
+      title: t("columns.is_disabled"),
+      dataIndex: "is_disabled",
+      key: "is_disabled",
+      align: "center",
+      render: (_text, record) => record?.is_disabled == true ? "true" :"false",
+      ellipsis: true,
+    },
     {
       title: t("columns.image"),
       dataIndex: "image",

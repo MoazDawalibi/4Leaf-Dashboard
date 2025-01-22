@@ -26,11 +26,8 @@ const Category = React.lazy(() => import("./Pages/Category/Page"));
 const User = React.lazy(() => import("./Pages/users/Page"));
 const StaticInfo = React.lazy(() => import("./Pages/StaticInfo/Page"));
 const Shipment = React.lazy(() => import("./Pages/Shipment/Page"));
-
-
-
-
-
+const Order = React.lazy(() => import("./Pages/Order/Page"));
+const Product = React.lazy(() => import("./Pages/Product/Page"));
 
 
 
@@ -130,15 +127,23 @@ export const menuItems: TMenuItem[] = [
 ];
 
 export const CrudRoute: TCrudRoute[] = [
-  // {
-  //   header: "page_header.Subject",
-  //   element: <Subject />,
-  //   path: `/${ABILITIES_ENUM?.GRADE}/:${ParamsEnum?.GRADE_ID}`,
-  //   abilities: ABILITIES_ENUM?.SUBJECT,
-  //   abilities_value: ABILITIES_VALUES_ENUM.INDEX,
-  //   prevPath: 1,
-  // },
+  {
+    header: "page_header.order",
+    element: <Order />,
+    path: `/${ABILITIES_ENUM?.Shipment}/:${ParamsEnum?.SHIPMENT_ID}`,
+    abilities: ABILITIES_ENUM?.Order,
+    abilities_value: ABILITIES_VALUES_ENUM.INDEX,
+    prevPath: 1,
+  },
 
+  {
+    header: "page_header.product",
+    element: <Product />,
+    path: `/${ABILITIES_ENUM?.Shipment}/:${ParamsEnum?.SHIPMENT_ID}/:${ParamsEnum?.ORDER_ID}`,
+    abilities: ABILITIES_ENUM?.Product,
+    abilities_value: ABILITIES_VALUES_ENUM.INDEX,
+    prevPath: 1,
+  },
 ];
 
 export const AppRoutes: Record<string, string> = Object.fromEntries(

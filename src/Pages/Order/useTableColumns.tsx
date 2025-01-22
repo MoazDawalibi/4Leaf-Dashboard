@@ -7,13 +7,13 @@ import { useObjectToEdit } from "../../zustand/ObjectToEditState";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import {
-  canDeleteShipment,
-  canEditShipment,
-  canShowShipment,
+  canDeleteOrder,
+  canEditOrder,
+  canShowOrder,
 } from "../../utils/hasAbilityFn";
 import ActionButtons from "../../Components/Table/ActionButtons";
 import ColumnsImage from "../../Components/Columns/ColumnsImage";
-import { Shipment } from "../../types/Shipment";
+import { Order } from "../../types/Order";
 import { useFilterStateState } from "../../zustand/Filter";
 
 export const useColumns = () => {
@@ -23,23 +23,23 @@ export const useColumns = () => {
   const navigate = useNavigate();
   const { setFilter } = useFilterStateState();
 
-  const handelShow = (record: Shipment) => {
+  const handelShow = (record: Order) => {
     setFilter({});
     navigate(`${record?.id}`);
   };
 
-  const handelDelete = (data: Shipment) => {
+  const handelDelete = (data: Order) => {
     setObjectToEdit(data);
-    handel_open_model(ModalEnum?.SHIPMENT_DELETE);
+    handel_open_model(ModalEnum?.ORDER_DELETE);
   };
 
-  const handleEdit = (record: Shipment) => {
+  const handleEdit = (record: Order) => {
     setObjectToEdit(record);
-    handel_open_model(ModalEnum?.SHIPMENT_EDIT);
+    handel_open_model(ModalEnum?.ORDER_EDIT);
   };
   const [t] = useTranslation();
 
-  const columns: TableColumnsType<Shipment> = [
+  const columns: TableColumnsType<Order> = [
     // {
     //   title: t("columns.id"),
     //   dataIndex: "id",
@@ -47,32 +47,6 @@ export const useColumns = () => {
     //   align: "center",
     //   render: (_text, record) => record?.id,
     // },
-    {
-      title: t("columns.name"),
-      dataIndex: "name",
-      key: "name",
-      align: "center",
-      render: (_text, record) => record?.name,
-      // ellipsis: true,
-    },
-
-    {
-      title: t("columns.start_date"),
-      dataIndex: "start_date",
-      key: "start_date",
-      align: "center",
-      render: (_text, record) => record?.start_date,
-      // ellipsis: true,
-    },
-
-    {
-      title: t("columns.end_date"),
-      dataIndex: "end_date",
-      key: "end_date",
-      align: "center",
-      render: (_text, record) => record?.end_date,
-      // ellipsis: true,
-    },
 
     {
       title: t("columns.status"),
@@ -84,13 +58,23 @@ export const useColumns = () => {
     },
 
     {
-      title: t("columns.order_count"),
-      dataIndex: "order_count",
-      key: "order_count",
+      title: t("columns.customer_name"),
+      dataIndex: "customer_name",
+      key: "customer_name",
       align: "center",
-      render: (_text, record) => record?.order_count,
+      render: (_text, record) => record?.customers?.name,
       // ellipsis: true,
     },
+
+    {
+      title: t("columns.shipment_name"),
+      dataIndex: "shipment_name",
+      key: "shipment_name",
+      align: "center",
+      render: (_text, record) => record?.shipments?.name,
+      // ellipsis: true,
+    },
+    
 
     {
       title: t("columns.product_count"),
@@ -98,24 +82,6 @@ export const useColumns = () => {
       key: "product_count",
       align: "center",
       render: (_text, record) => record?.product_count,
-      // ellipsis: true,
-    },
-
-    {
-      title: t("columns.currency_price"),
-      dataIndex: "currency_price",
-      key: "currency_price",
-      align: "center",
-      render: (_text, record) => record?.currency_price,
-      // ellipsis: true,
-    },
-
-    {
-      title: t("columns.customer_currency_price"),
-      dataIndex: "customer_currency_price",
-      key: "customer_currency_price",
-      align: "center",
-      render: (_text, record) => record?.customer_currency_price,
       // ellipsis: true,
     },
 
@@ -164,9 +130,9 @@ export const useColumns = () => {
       render: (_text, record, index) => {
         return (
           <ActionButtons
-            canDelete={canDeleteShipment}
-            canEdit={canEditShipment}
-            canShow={canShowShipment}
+            canDelete={canDeleteOrder}
+            canEdit={canEditOrder}
+            canShow={canShowOrder}
             index={index}
             onDelete={() => handelDelete(record)}
             onEdit={() => handleEdit(record)}

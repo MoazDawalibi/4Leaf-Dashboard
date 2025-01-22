@@ -15,7 +15,8 @@ const EditModel: React.FC = () => {
   const { objectToEdit } = useObjectToEdit((state) => state);
 
   const handleSubmit = (values: any) => {
-    const Data_to_send = { ...values };
+    const Is_Disabled = values?.is_disabled == true ? 1 : 0    
+    const Data_to_send = { ...values,is_disabled:Is_Disabled };
     const handelImage = handelImageState(Data_to_send, "image");
     mutate(handelImage);
   };

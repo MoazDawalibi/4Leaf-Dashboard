@@ -13,6 +13,7 @@ const ModelForm = () => {
       </Col>
       <Col>
         <ValidationField name="image" placeholder="image" label="image" type="File" />
+        <ValidationField name="is_disabled" type="Checkbox" placeholder="is_disabled" label="is_disabled" />
       </Col>
     </Row>
   );

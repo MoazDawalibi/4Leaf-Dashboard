@@ -263,7 +263,19 @@
     "shipping_fees_total_profit":"مرابح الشحن",
     "currency_profit":"مرابح العملة",
     "total_profit":"إجمالي المرابح",
-    "total_price":"إجمالي السعر"
+    "total_price":"إجمالي السعر",
+    "shipment_name":"اسم الطلبية",
+    "customer_name":"اسم الزبون",
+    "price_with_quantity":"السعر مع الكمية",
+    "price_with_currency":"السعر مع العملة",
+    "product_options":"الملاحظات",
+    "price":"السعر",
+    "product_quantity":"الكمية",
+    "discount":"الخصم",
+    "shipping_fees":"أجور الشحن",
+    "order_id":"رقم الطلب",
+    "is_disabled":"معطل"
+
   },
   "practical": {
     "to_confirm_deletion_please_re_enter": "لتأكيد الحذف، يرجى إعادة الإدخال",
@@ -454,7 +466,9 @@
     "customers":"الزبائن",
     "Category":"صنف",
     "StaticInfo":"معلومات ثابتة",
-    "Shipment":"طلبية"
+    "Shipment":"طلبية",
+    "Order":"الطلبات",
+    "Product":"المنتجات"
   },
   "education_class_actions": {
     "Student_Records": "سجلات الطلاب",
@@ -615,7 +629,17 @@
     "shipping_fees_total_profit":"مرابح الشحن",
     "currency_profit":"مرابح العملة",
     "total_profit":"إجمالي المرابح",
-    "total_price":"إجمالي السعر"
+    "total_price":"إجمالي السعر",
+    "is_disabled":"معطل",
+    "customer_name":"اسم الزبون",
+    "shipment_id":"رقم الطلبية",
+    "price_with_quantity":"السعر مع الكمية",
+    "price_with_currency":"السعر مع العملة",
+    "product_options":"الملاحظات",
+    "product_quantity":"الكمية",
+    "discount":"الخصم",
+    "shipping_fees":"أجور الشحن",
+    "order_name":"اسم الطلب"
   },
   "select": {
     "enums": {
@@ -1019,7 +1043,9 @@
     "customers":"الزبائن",
     "Category":"الأصناف",
     "StaticInfo":"المعلومات الثابتة",
-    "Shipment":"الطلبيات"
+    "Shipment":"الطلبيات",
+    "Order":"الطلبات",
+    "Product":"المنتجات"
   },
   "page_header": {
     "home": "لوحة القيادة",
@@ -1085,7 +1111,9 @@
     "shipping_fees":"أجور الشحن",
     "Category":"الأصناف",
     "StaticInfo":"المعلومات الثابتة",
-    "Shipment":"الطلبيات"
+    "Shipment":"الطلبيات",
+    "Order":"الطلبات",
+    "Product":"المنتجات"
   },
   "table": {
     "student": "قائمة الطلاب",
@@ -1113,7 +1141,9 @@
     "Category":"الأصناف",
     "users":"المستخدمون",
     "StaticInfo":"المعلومات الثابتة",
-    "Shipment":"الطلبيات"
+    "Shipment":"الطلبيات",
+    "Order":"الطلبات",
+    "Product":"المنتجات"
   },
   "card": {
     "residual": "المتبقي",

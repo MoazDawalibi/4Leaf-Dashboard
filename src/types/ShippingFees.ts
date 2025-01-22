@@ -9,6 +9,7 @@ export interface ShippingFees {
   name: string; 
   price:number;
   image: string;
+  is_disabled:boolean;
 }
 
 export interface InitialValues {
@@ -16,6 +17,7 @@ export interface InitialValues {
   name: string;
   price:number;
   image: string;
+  is_disabled:boolean;
 }
 
 export type ShippingFeesInitialValues = Partial<Nullable<InitialValues>>;

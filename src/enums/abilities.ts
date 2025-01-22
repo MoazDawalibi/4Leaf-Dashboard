@@ -7,7 +7,9 @@ export enum ABILITIES_ENUM {
   Category = "category",
   User = "user",
   StaticInfo = "static_info",
-  Shipment = "shipment"
+  Shipment = "shipment",
+  Order = "order",
+  Product = "product"
 
 
 

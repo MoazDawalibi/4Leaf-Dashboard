@@ -92,3 +92,39 @@ export const canShowShipment = hasAbility(
   ABILITIES_ENUM.Shipment,
   ABILITIES_VALUES_ENUM.SHOW,
 );
+
+// order
+export const canAddOrder = hasAbility(
+  ABILITIES_ENUM.Order,
+  ABILITIES_VALUES_ENUM.STORE,
+);
+export const canEditOrder = hasAbility(
+  ABILITIES_ENUM.Order,
+  ABILITIES_VALUES_ENUM.UPDATE,
+);
+export const canDeleteOrder = hasAbility(
+  ABILITIES_ENUM.Order,
+  ABILITIES_VALUES_ENUM.DELETE,
+);
+export const canShowOrder = hasAbility(
+  ABILITIES_ENUM.Order,
+  ABILITIES_VALUES_ENUM.SHOW,
+);
+
+// Product
+export const canAddProduct = hasAbility(
+  ABILITIES_ENUM.Product,
+  ABILITIES_VALUES_ENUM.STORE,
+);
+export const canEditProduct = hasAbility(
+  ABILITIES_ENUM.Product,
+  ABILITIES_VALUES_ENUM.UPDATE,
+);
+export const canDeleteProduct = hasAbility(
+  ABILITIES_ENUM.Product,
+  ABILITIES_VALUES_ENUM.DELETE,
+);
+export const canShowProduct = hasAbility(
+  ABILITIES_ENUM.Product,
+  ABILITIES_VALUES_ENUM.SHOW,
+);

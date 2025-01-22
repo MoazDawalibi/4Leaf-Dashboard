@@ -6,24 +6,23 @@ import { ModalEnum } from "../../../enums/Model";
 import LayoutModel from "../../../Layout/Dashboard/LayoutModel";
 import { QueryStatusEnum } from "../../../enums/QueryStatus";
 import ModelForm from "./ModelForm";
-import { useAddShippingFees } from "../../../api/ShippingFees";
+import { useAddProduct } from "../../../api/Product";
 
 const AddModel: React.FC = () => {
-  const { mutate, status } = useAddShippingFees();
+  const { mutate, status } = useAddProduct();
 
-  const handleSubmit = (values: any) => {
-    const Is_Disabled = values?.is_disabled == true ? 1 : 0    
+  const handleSubmit = (values: any) => {    
     mutate({
       ...values,
-      is_disabled:Is_Disabled,
+      shipping_fee_id:values?.shipping_fees
     });
   };
   return (
     <>
       <LayoutModel
         status={status as QueryStatusEnum}
-        ModelEnum={ModalEnum.SHIPPING_FEES_ADD}
-        modelTitle="ShippingFees"
+        ModelEnum={ModalEnum.PRODUCT_ADD}
+        modelTitle="Product"
         handleSubmit={handleSubmit}
         getInitialValues={getInitialValues({})}
         getValidationSchema={getValidationSchema}

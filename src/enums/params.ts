@@ -1,4 +1,6 @@
 export enum ParamsEnum {
+  PRODUCT_ID = "product_id",
+  ORDER_ID = "order_id",
   SHIPMENT_ID = "shipment_id",
   STATICINFO_ID = "staticinfo_id",
   USERS_ID = "users_id",

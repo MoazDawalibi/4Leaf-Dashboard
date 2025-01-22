@@ -25,9 +25,6 @@ const Date = ({
   const onCalendarChange = (value: any) => {
     formik.setFieldValue(name, value);
   };
-  console.log(props);
-  console.log(FormikValue);
-
   const Formatter = [DateEnum?.FORMATE];
   return (
     <div className="ValidationField w-100 ">

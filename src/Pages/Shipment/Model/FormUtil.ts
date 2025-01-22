@@ -2,6 +2,7 @@
 
 import * as Yup from "yup";
 import { Shipment, ShipmentInitialValues } from "../../../types/Shipment";
+import dayjs from "dayjs";
 
 export const getInitialValues = (
   objectToEdit: Partial<Shipment>,
@@ -10,8 +11,8 @@ export const getInitialValues = (
   return {
     id: objectToEdit?.id,
     name: objectToEdit?.name ?? "",
-    start_date: objectToEdit?.start_date ?? "",
-    end_date: objectToEdit?.end_date ?? "",
+    start_date: objectToEdit?.start_date ? dayjs(objectToEdit?.start_date) : null,
+    end_date: objectToEdit?.end_date ? dayjs(objectToEdit?.end_date) : null,
     status: objectToEdit?.status ?? "",
     order_count: objectToEdit?.order_count ?? 0,
     product_count: objectToEdit?.product_count ?? 0,

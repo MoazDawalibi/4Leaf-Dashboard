@@ -17,7 +17,7 @@ const App: React.FC = () => {
   const response = useGetAllUsers({
     pagination: true,
     ...filterState,
-    email: filterState.name || name,
+    email: filterState.email || name,
     sort_by,
   });
 

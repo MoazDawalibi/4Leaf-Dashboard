@@ -1,4 +1,10 @@
 export enum ModalEnum {
+  PRODUCT_EDIT = "product.edit",
+  PRODUCT_ADD = "product.add",
+  PRODUCT_DELETE = "product.delete",
+  ORDER_EDIT = "order.edit",
+  ORDER_ADD = "order.add",
+  ORDER_DELETE = "order.delete",
   SHIPMENT_EDIT = "shipment.edit",
   SHIPMENT_ADD = "shipment.add",
   SHIPMENT_DELETE = "shipment.delete",
