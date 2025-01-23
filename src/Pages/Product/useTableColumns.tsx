@@ -11,6 +11,7 @@ import {
 } from "../../utils/hasAbilityFn";
 import ActionButtons from "../../Components/Table/ActionButtons";
 import { Product } from "../../types/Product";
+import ColumnsImage from "../../Components/Columns/ColumnsImage";
 
 export const useColumns = () => {
   const { handel_open_model } = useModalHandler();
@@ -36,6 +37,14 @@ export const useColumns = () => {
       render: (_text, record) => record?.id,
     },
     {
+      title: t("columns.order_id"),
+      dataIndex: "order_id",
+      key: "order_id",
+      align: "center",
+      render: (_text, record) => record?.orders?.id,
+      // ellipsis: true,
+    },
+    {
       title: t("columns.name"),
       dataIndex: "name",
       key: "name",
@@ -43,14 +52,16 @@ export const useColumns = () => {
       render: (_text, record) => record?.name,
       // ellipsis: true,
     },
-
     {
-      title: t("columns.order_id"),
-      dataIndex: "order_id",
-      key: "order_id",
+      title: t("columns.image"),
+      dataIndex: "image",
+      key: "image",
       align: "center",
-      render: (_text, record) => record?.orders?.id,
-      // ellipsis: true,
+      render: (_text: any, record: Product) => {
+        let str = record?.image;
+
+        return <ColumnsImage src={str} />;
+      },
     },
 
     {
@@ -115,7 +126,14 @@ export const useColumns = () => {
       render: (_text, record) => record?.price_with_quantity,
       // ellipsis: true,
     },
-
+    {
+      title: t("columns.is_ordered"),
+      dataIndex: "is_ordered",
+      key: "is_ordered",
+      align: "center",
+      render: (_text, record) => record?.is_ordered == true ? t("practical.yes") :t("practical.no"),
+      ellipsis: true,
+    },
     {
       title: t("columns.procedure"),
       key: "actions",
@@ -124,7 +142,7 @@ export const useColumns = () => {
         return (
           <ActionButtons
             canDelete={canDeleteProduct}
-            canEdit={canEditProduct}
+            // canEdit={canEditProduct}
             index={index}
             onDelete={() => handelDelete(record)}
             onEdit={() => handleEdit(record)}

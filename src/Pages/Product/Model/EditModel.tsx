@@ -9,14 +9,23 @@ import { QueryStatusEnum } from "../../../enums/QueryStatus";
 import { useObjectToEdit } from "../../../zustand/ObjectToEditState";
 import { useUpdateProduct } from "../../../api/Product";
 import { handelImageState } from "../../../utils/DataToSendImageState";
+import { useGetAllShippingFees } from "../../../api/ShippingFees";
 
 const EditModel: React.FC = () => {
   const { mutate, status } = useUpdateProduct();
   const { objectToEdit } = useObjectToEdit((state) => state);
-
+  const {data} = useGetAllShippingFees();
+  const ShippingFees = data?.data?.data;
+  
   const handleSubmit = (values: any) => {
-    const Data_to_send = { ...values };
-    const handelImage = handelImageState(Data_to_send, "icon");
+
+    const ShippingFeesPrice = ShippingFees?.find((e:any) =>  e.id === values.shipping_fees)
+    const DataToSend = {
+      ...values,
+      shipping_fees:ShippingFeesPrice?.price,
+      shipping_fee_id:values?.shipping_fees
+    }
+    const handelImage = handelImageState(DataToSend, "icon");
     mutate(handelImage);
   };
 

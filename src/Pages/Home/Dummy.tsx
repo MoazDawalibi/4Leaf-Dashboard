@@ -1,6 +1,10 @@
 const Dummy = () => {
   return (
-    <div className="DummyHomePage">{/* <div>mohammed karim -_- </div> */}</div>
+    <div className="DummyHomePage">
+      <div className="center">
+        <img src="/App/Logo.png" alt="" />
+      </div>
+    </div>
   );
 };
 

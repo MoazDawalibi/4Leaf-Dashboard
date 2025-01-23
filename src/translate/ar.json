@@ -274,7 +274,8 @@
     "discount":"الخصم",
     "shipping_fees":"أجور الشحن",
     "order_id":"رقم الطلب",
-    "is_disabled":"معطل"
+    "is_disabled":"معطل",
+    "is_ordered":"مطلوب"
 
   },
   "practical": {
@@ -639,7 +640,8 @@
     "product_quantity":"الكمية",
     "discount":"الخصم",
     "shipping_fees":"أجور الشحن",
-    "order_name":"اسم الطلب"
+    "order_name":"رقم الطلب",
+    "is_ordered":"مطلوب"
   },
   "select": {
     "enums": {

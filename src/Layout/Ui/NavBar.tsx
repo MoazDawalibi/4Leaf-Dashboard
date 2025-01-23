@@ -17,7 +17,6 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
   const navigate = useNavigate();
   const PrevPath = getPrevPathRoute(location.pathname);
   const [t] = useTranslation();
-  console.log(search_array);
 
   const translateArray = translateOptions(search_array, t);
 

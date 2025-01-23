@@ -9,6 +9,8 @@ export interface Product {
   orders: any;
   id: number; 
   name: string; 
+  is_ordered?:boolean
+  image:any
   order_id: number | any;
   shipping_fees: number;
   discount: number;
@@ -25,6 +27,8 @@ export interface InitialValues {
   id: number; 
   name: string; 
   order_id: number;
+  is_ordered:boolean;
+  image:any;
   shipping_fees: number;
   discount: number;
   product_quantity: number;

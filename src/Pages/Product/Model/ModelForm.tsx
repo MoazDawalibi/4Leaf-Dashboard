@@ -22,12 +22,14 @@ const ModelForm = () => {
           fieldNames={{ value: "value", label: "label" }} 
         />
         <ValidationField name="product_quantity" placeholder="product_quantity" label="product_quantity" type="number"/>
+        <ValidationField name="price" placeholder="price" label="price" type="number"/>
 
       </Col>
       <Col>
-        <ValidationField name="price" placeholder="price" label="price" type="number"/>
         <ValidationField name="discount" placeholder="discount" label="discount" type="number"/>
         <ValidationField name="product_options" placeholder="product_options" label="product_options" type="TextArea" />
+        <ValidationField name="image" placeholder="image" label="image" type="File" />
+
       </Col>
     </Row>
   );

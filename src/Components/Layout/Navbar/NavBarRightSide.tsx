@@ -38,7 +38,7 @@ const NavBarRightSide = () => {
           icon={<CiCirclePlus size={25} />}
         />
         <TooltipComp
-          onClick={() => Navigate("/notifications")}
+          // onClick={() => Navigate("/notifications")}
           className="NotificationsIcon"
           note="notification"
           color="#E0E0E0"

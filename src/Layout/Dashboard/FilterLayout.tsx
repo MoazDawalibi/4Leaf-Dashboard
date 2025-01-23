@@ -60,7 +60,7 @@ const FilterLayout = ({
             )}
           </span>
 
-          <span>{haveOrder && <OrderBySelect />}</span>
+          {/* <span>{haveOrder && <OrderBySelect />}</span> */}
         </div>
       </div>
 

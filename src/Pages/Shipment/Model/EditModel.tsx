@@ -35,7 +35,7 @@ const EditModel: React.FC = () => {
         getValidationSchema={getValidationSchema}
         isAddModal={false}
       >
-        <ModelForm isAdd={false}/>
+        <ModelForm isRemoved={true}/>
       </LayoutModel>
     </>
   );

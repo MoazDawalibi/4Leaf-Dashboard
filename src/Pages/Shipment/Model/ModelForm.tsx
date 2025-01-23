@@ -4,15 +4,14 @@ import { Col, Row } from "reactstrap";
 import ValidationField from "../../../Components/ValidationField/ValidationField";
 import { ShipmentStatus } from "../../../config/ShipmentStatus";
 
-const ModelForm = ({isAdd = true}:{isAdd?:boolean}) => {
+const ModelForm = ({isRemoved = true}:{isRemoved?:boolean}) => {
   return (
     <Row className="w-100">
       <Col>
         <ValidationField name="name" placeholder="name" label="name" />
         <ValidationField name="start_date" placeholder="start_date" label="start_date" type="Date"/>
         <ValidationField name="end_date" placeholder="end_date" label="end_date" type="Date" />
-        <ValidationField name="status" placeholder="status" label="status" type="Select" option={ShipmentStatus} fieldNames={{value:"status",label:"status"}}/>
-        {isAdd ? "" 
+        {isRemoved ? "" 
         :
         <>
           <ValidationField name="order_count" placeholder="order_count" label="order_count" type="number"/>
@@ -23,9 +22,10 @@ const ModelForm = ({isAdd = true}:{isAdd?:boolean}) => {
 
       </Col>
       <Col>
+        <ValidationField name="status" placeholder="status" label="status" type="Select" option={ShipmentStatus} fieldNames={{value:"status",label:"status"}}/>
         <ValidationField name="currency_price" placeholder="currency_price" label="currency_price"  type="number"/>
         <ValidationField name="customer_currency_price" placeholder="customer_currency_price" label="customer_currency_price" type="number" />
-        {isAdd ? "" 
+        {isRemoved ? "" 
         :
         <>
           <ValidationField name="shipping_fees_total_profit" placeholder="shipping_fees_total_profit" label="shipping_fees_total_profit" type="number"/>

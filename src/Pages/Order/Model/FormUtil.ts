@@ -10,11 +10,10 @@ export const getInitialValues = (
   objectToEdit: Partial<Order>,
 ): OrderInitialValues => {
   const { shipment_id } = useParams<ParamsEnum>();
-  const [t] = useTranslation();
 
   return {
     id: objectToEdit?.id,
-    status: objectToEdit?.status ?? t("input.status"),
+    status: objectToEdit?.status ?? "",
     customer_id: objectToEdit?.customer_id ,
     shipment_id: objectToEdit?.shipment_id ?? shipment_id ,
     product_count: objectToEdit?.product_count ?? 0,

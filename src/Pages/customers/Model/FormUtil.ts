@@ -25,7 +25,7 @@ export const getValidationSchema = () => {
     account_name: Yup.mixed().required("validation.required"),
     customer_type: Yup.mixed().required("validation.required"),
     phone_number: Yup.number().required("validation.required"),
-    note: Yup.mixed().required("validation.required"),
+    // note: Yup.mixed().required("validation.required"),
 
   });
 };
